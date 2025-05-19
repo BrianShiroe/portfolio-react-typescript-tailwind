@@ -196,20 +196,14 @@ const ProjectCard: React.FC<Project> = ({
 
 const Projects: React.FC = () => (
   <div className="p-6 max-w-6xl mx-auto">
-    <h1 className="animated bounce-in flex justify-center items-center space-x-3 text-4xl font-bold mb-6 text-center">
-      <FaLaptopCode />
-      <span>ACADEMIC PROJECTS</span>
-    </h1>
+    <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">ACADEMIC PROJECTS</h1>
     <div className="projects-container academic mb-12">
       {projects.academic.map((project) => (
         <ProjectCard key={project.id} {...project} />
       ))}
     </div>
 
-    <h1 className="animated bounce-in flex justify-center items-center space-x-3 text-4xl font-bold mb-6 text-center">
-      <FaLaptopCode />
-      <span>PERSONAL PROJECTS</span>
-    </h1>
+    <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">PERSONAL PROJECTS</h1>
     <div className="projects-container personal">
       {projects.personal.map((project) => (
         <ProjectCard key={project.id} {...project} />
