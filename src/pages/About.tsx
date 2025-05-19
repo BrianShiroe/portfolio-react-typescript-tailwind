@@ -1,73 +1,98 @@
 // src/pages/About.tsx
-// Displays personal background, education details, and academic achievements.
+// Displays personal background, education details, and academic achievements .
 
-import { AcademicCapIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
+import { AcademicCapIcon, TrophyIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
 
 const About = () => {
   const achievements = [
     "Cum Laude Graduate",
     "Academic Scholar",
     "Dean's Lister",
+    "Placed in the Top 20 at the 2024 AppCon Competition",
     "PAIR Research Conference Best Oral Research Presenter",
     "PAIR Research Conference Best Abstract",
-    "Rank in the top 20 of 2024 Appcon Competition",
-    "CCNAv7: Introduction to Networks",
+  ];
+
+  const awardsAndCertificates = [
+    "CCNAv7: Introduction to Networking",
     "PCAP: Programming Essentials in Python",
     "Cisco: Introduction to IoT",
     "CLA: Programming Essentials in C",
   ];
 
+  const educationDetails = [
+    "Degree: Bachelor of Science in Computer Science",
+    "Institution: Columban College, Inc., Philippines",
+    "Years Attended: 2021 - 2025",
+    "Expected Graduation: June 18, 2025",
+  ];
+
   return (
-    <div className="p-6 max-w-5xl mx-auto min-h-screen">
-      <h2 className="text-4xl font-semibold mb-6 text-center">About Me</h2>
-      <p className="mb-10 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-justify">
-        I’m a <span className="text-indigo-600 dark:text-indigo-400">software developer</span> with a passion for
-        continuous growth in
-        <span className="text-blue-600 dark:text-blue-400"> web technologies</span>,
-        <span className="text-green-600 dark:text-green-400"> software engineering</span>, and
-        <span className="text-yellow-600 dark:text-yellow-400"> machine learning</span>. Like a dedicated gamer
-        mastering new levels, I approach each project with
-        <span className="text-pink-600 dark:text-pink-400"> patience</span>,
-        <span className="text-emerald-600 dark:text-emerald-400"> persistence</span>, and a focus on building
-        <span className="text-purple-600 dark:text-purple-400"> reliable</span>,
-        <span className="text-cyan-600 dark:text-cyan-400"> efficient</span>, and
-        <span className="text-rose-600 dark:text-rose-400"> scalable</span> applications. I value
-        <span className="text-indigo-600 dark:text-indigo-400"> collaboration</span> and learning from every challenge
-        to deliver solutions that truly make a difference.
+    <div className="p-8 max-w-6xl mx-auto min-h-screen">
+      <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
+
+      <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
+        I’m a <span className="text-indigo-600 dark:text-indigo-400 font-semibold">software developer</span> with a
+        passion for continuous growth in
+        <span className="text-blue-600 dark:text-blue-400 font-semibold"> web technologies</span>,
+        <span className="text-green-600 dark:text-green-400 font-semibold"> software engineering</span>, and
+        <span className="text-yellow-600 dark:text-yellow-400 font-semibold"> machine learning</span>. Like a dedicated
+        gamer mastering new levels, I approach each project with
+        <span className="text-pink-600 dark:text-pink-400 font-semibold"> patience</span>,
+        <span className="text-emerald-600 dark:text-emerald-400 font-semibold"> persistence</span>, and a focus on
+        building
+        <span className="text-purple-600 dark:text-purple-400 font-semibold"> reliable</span>,
+        <span className="text-cyan-600 dark:text-cyan-400 font-semibold"> efficient</span>, and
+        <span className="text-rose-600 dark:text-rose-400 font-semibold"> scalable</span> applications. I value
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold"> collaboration</span> and learning from
+        every challenge to deliver solutions that truly make a difference.
       </p>
 
-      {/* Two Columns Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Education Section */}
+      {/* 3-column layout for Education, Achievements, Awards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {/* Education */}
         <section>
-          <h3 className="text-3xl font-semibold mb-4 flex items-center space-x-2 text-indigo-600 dark:text-indigo-400">
-            <AcademicCapIcon className="w-7 h-7" />
+          <h3 className="text-3xl font-semibold mb-6 flex items-center space-x-3 text-indigo-600 dark:text-indigo-400">
+            <AcademicCapIcon className="w-8 h-8" />
             <span>Education</span>
           </h3>
-          <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <p className="text-xl font-bold flex items-center space-x-2">
-              <AcademicCapIcon className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
-              <span>Bachelor of Science in Computer Science</span>
-            </p>
-            <p className="text-md italic mb-1">Columban College, Inc. - Olongapo, Philippines</p>
-            <p className="mb-1">2021 - 2025</p>
-            <p>
-              Graduating: <span className="font-semibold">June 18, 2025</span>
-            </p>
-          </div>
+          <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
+            {educationDetails.map((detail) => (
+              <li key={detail} className="flex items-center space-x-2">
+                <AcademicCapIcon className="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
+                <span>{detail}</span>
+              </li>
+            ))}
+          </ul>
         </section>
 
-        {/* Academic Achievements Section */}
+        {/* Achievements */}
         <section>
-          <h3 className="text-3xl font-semibold mb-4 flex items-center space-x-2 text-green-600 dark:text-green-400">
-            <CheckCircleIcon className="w-7 h-7" />
-            <span>Academic Achievements</span>
+          <h3 className="text-3xl font-semibold mb-6 flex items-center space-x-3 text-green-600 dark:text-green-400">
+            <TrophyIcon className="w-8 h-8" />
+            <span>Achievements</span>
           </h3>
-          <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
             {achievements.map((achievement) => (
               <li key={achievement} className="flex items-center space-x-2">
-                <CheckCircleIcon className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0" />
+                <TrophyIcon className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0" />
                 <span>{achievement}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Awards & Certificates */}
+        <section>
+          <h3 className="text-3xl font-semibold mb-6 flex items-center space-x-3 text-yellow-600 dark:text-yellow-400">
+            <CheckBadgeIcon className="w-8 h-8" />
+            <span>Awards & Certificates</span>
+          </h3>
+          <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
+            {awardsAndCertificates.map((award) => (
+              <li key={award} className="flex items-center space-x-2">
+                <CheckBadgeIcon className="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0" />
+                <span>{award}</span>
               </li>
             ))}
           </ul>
