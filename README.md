@@ -22,7 +22,7 @@ My personal portfolio site built with modern web technologies to showcase my ski
 
 **⚛️ Built with React & TypeScript for scalable architecture**  
 
-**🌙 Dark and Light mode supported **  
+**🌙 Dark and Light mode supported**  
 
 **📱 Fully Responsive across all device sizes**  
 
