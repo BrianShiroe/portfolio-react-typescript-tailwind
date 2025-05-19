@@ -33,19 +33,19 @@ const About = () => {
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
         I’m a <span className="text-indigo-600 dark:text-indigo-400 font-semibold">software developer</span> with a
-        passion for continuous growth in
-        <span className="text-blue-600 dark:text-blue-400 font-semibold"> web technologies</span>,
-        <span className="text-green-600 dark:text-green-400 font-semibold"> software engineering</span>, and
-        <span className="text-yellow-600 dark:text-yellow-400 font-semibold"> machine learning</span>. Like a dedicated
-        gamer mastering new levels, I approach each project with
-        <span className="text-pink-600 dark:text-pink-400 font-semibold"> patience</span>,
-        <span className="text-emerald-600 dark:text-emerald-400 font-semibold"> persistence</span>, and a focus on
-        building
-        <span className="text-purple-600 dark:text-purple-400 font-semibold"> reliable</span>,
-        <span className="text-cyan-600 dark:text-cyan-400 font-semibold"> efficient</span>, and
-        <span className="text-rose-600 dark:text-rose-400 font-semibold"> scalable</span> applications. I value
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold"> collaboration</span> and learning from
-        every challenge to deliver solutions that truly make a difference.
+        passion for continuous growth in&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">web technologies</span>,&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">software engineering</span>, and&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">machine learning</span>. Like a dedicated
+        gamer mastering new levels, I approach each project with&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">patience</span>,&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">persistence</span>, and a focus on
+        building&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">reliable</span>,&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">efficient</span>, and&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">scalable</span> applications. I value&nbsp;
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">collaboration</span> and learning
+        from&nbsp; every challenge to deliver solutions that truly make a difference.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}
