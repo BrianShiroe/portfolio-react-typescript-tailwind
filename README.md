@@ -5,7 +5,7 @@
 
 ---
 
-![Portfolio Demo](./public/images/demo/portfolio-demo.png)
+![Portfolio Demo](./public/images/demo-images/portfolio-demo.png)
 
 ## Description
 
