@@ -17,26 +17,18 @@
 
 </center>
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/yourusername/portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/yourusername/portfolio/issues">Request Feature</a>
-</h3>
+## Description
 
-## TL;DR
-
-Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [Brian O. Haw](https://github.com/yourusername). Thank you!
+Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [Brian Haw](https://github.com/BrianShiroe). Thank you!
 
 ## Built With
 
-My personal portfolio site built with modern web technologies to showcase my Full Stack Development skills and passion for AI, Machine Learning, and Game Development.
+My personal portfolio site built with modern web technologies to showcase my skills and tells a little bit about my story.
 
 - React  
 - TypeScript  
 - Tailwind CSS  
 - Vite (or Create React App)  
-- VS Code  
 
 ## Features
 
@@ -44,7 +36,7 @@ My personal portfolio site built with modern web technologies to showcase my Ful
 
 **⚛️ Built with React & TypeScript for scalable architecture**  
 
-**🌙 Dark mode support (if implemented)**  
+**🌙 Dark and Light mode supported **  
 
 **📱 Fully Responsive across all device sizes**  
 
@@ -66,11 +58,6 @@ To get a local copy up and running follow these simple steps.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
 
 ### Show your support
 
