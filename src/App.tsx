@@ -40,7 +40,7 @@ const App = () => {
       </div>
 
       {/* Add top padding equal to navbar height (e.g., 64px = 16 * 4) */}
-      <main className="pt-4">
+      <main className="pt-0">
         <section
           id="home"
           className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
