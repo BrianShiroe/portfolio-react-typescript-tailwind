@@ -25,8 +25,8 @@ const skills = {
     "VSCode (Intermediate)",
     "Visual Studio (Intermediate)",
     "Jira/Trello (Intermediate)",
-    "Docker (Beginner)",
     "LLM (Intermediate)",
+    "Docker (Beginner)",
   ],
   "Machine Learning": [
     "Yolo (Intermediate)",

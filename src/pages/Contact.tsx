@@ -17,13 +17,13 @@ const Contact = () => (
     <ul className="mb-6 space-y-2 text-gray-800 dark:text-gray-200">
       <li>
         <span className="inline-flex items-center space-x-2">
-          <FaFacebook className="text-blue-600" />
+          <FaFacebook/>
           <strong>Facebook:</strong>
           <a
             href="https://facebook.com/brianshiroe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="hover:underline"
           >
             facebook.com/brianshiroe
           </a>
@@ -31,13 +31,13 @@ const Contact = () => (
       </li>
       <li>
         <span className="inline-flex items-center space-x-2">
-          <FaLinkedin className="text-blue-700" />
+          <FaLinkedin />
           <strong>LinkedIn:</strong>
           <a
             href="https://www.linkedin.com/in/brianshiroe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="hover:underline"
           >
             www.linkedin.com/in/brianshiroe
           </a>
@@ -65,7 +65,7 @@ const Contact = () => (
         <span className="inline-flex items-center space-x-2">
           <FaEnvelope />
           <strong>Email:</strong>
-          <a href="mailto:brianshiroe@gmail.com" className="text-blue-600 hover:underline">
+          <a href="mailto:brianshiroe@gmail.com" className="hover:underline">
             brianshiroe@gmail.com
           </a>
         </span>
@@ -78,7 +78,7 @@ const Contact = () => (
             href="https://github.com/brianshiroe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="hover:underline"
           >
             github.com/brianshiroe
           </a>
@@ -92,7 +92,7 @@ const Contact = () => (
             href="https://mun-development.itch.io"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="hover:underline"
           >
             mun-development.itch.io
           </a>

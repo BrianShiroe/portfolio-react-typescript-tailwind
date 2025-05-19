@@ -1,6 +1,6 @@
 import React from "react";
 import type { ReactNode } from "react";
-import { FaLaptopCode, FaRobot, FaGlobe, FaDesktop, FaGamepad } from "react-icons/fa";
+import { FaRobot, FaGlobe, FaDesktop, FaGamepad } from "react-icons/fa";
 
 interface ExtraLink {
   href: string;
