@@ -196,7 +196,7 @@ const ProjectCard: React.FC<Project> = ({
 
 const Projects: React.FC = () => (
   <div className="p-6 max-w-6xl mx-auto">
-    <h1 className="animated bounce-in flex items-center space-x-3 text-4xl font-bold mb-6">
+    <h1 className="animated bounce-in flex justify-center items-center space-x-3 text-4xl font-bold mb-6 text-center">
       <FaLaptopCode />
       <span>ACADEMIC PROJECTS</span>
     </h1>
@@ -206,7 +206,7 @@ const Projects: React.FC = () => (
       ))}
     </div>
 
-    <h1 className="animated bounce-in flex items-center space-x-3 text-4xl font-bold mb-6">
+    <h1 className="animated bounce-in flex justify-center items-center space-x-3 text-4xl font-bold mb-6 text-center">
       <FaLaptopCode />
       <span>PERSONAL PROJECTS</span>
     </h1>
