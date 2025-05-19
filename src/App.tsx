@@ -50,21 +50,21 @@ const App = () => {
 
         <section
           id="about"
-          className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+          className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
         >
           <About />
         </section>
 
         <section
           id="skills"
-          className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+          className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
         >
           <Skills />
         </section>
 
         <section
           id="projects"
-          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
         >
           <Projects />
         </section>
@@ -72,7 +72,7 @@ const App = () => {
 
         <section
           id="contact"
-          className={`${getBgClass(4)} min-h-screen`}
+          className={`${getBgClass(4)} min-h-screen pt-12`}
         >
           <Contact />
         </section>
