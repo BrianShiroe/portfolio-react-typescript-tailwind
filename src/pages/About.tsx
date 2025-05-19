@@ -1,27 +1,33 @@
 // File: About.tsx
 // Description: About page component displaying personal bio, education background, and academic achievements with styled sections in two columns, including Cloudflare (Heroicons) icons.
 
-import { AcademicCapIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import { AcademicCapIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 
 const About = () => {
   const achievements = [
-    'Cum Laude Graduate',
-    'Academic Scholar',
+    "Cum Laude Graduate",
+    "Academic Scholar",
     "Dean's Lister",
-    'PAIR Research Conference Best Oral Research Presenter',
-    'PAIR Research Conference Best Abstract',
-    'CCNAv7: Introduction to Networks',
-    'PCAP: Programming Essentials in Python',
-    'Cisco: Introduction to IoT',
-    'CLA: Programming Essentials in C',
+    "PAIR Research Conference Best Oral Research Presenter",
+    "PAIR Research Conference Best Abstract",
+    "CCNAv7: Introduction to Networks",
+    "PCAP: Programming Essentials in Python",
+    "Cisco: Introduction to IoT",
+    "CLA: Programming Essentials in C",
   ];
 
   return (
     <div className="p-6 max-w-5xl mx-auto min-h-screen">
       <h2 className="text-4xl font-semibold mb-6 text-center">About Me</h2>
       <p className="mb-10 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center">
-        I'm a passionate full-stack developer with experience in building web applications using
-        React, TypeScript, Node.js, and more. I enjoy learning new technologies and creating fun, efficient solutions.
+        I'm a passionate <span className="text-indigo-600 dark:text-indigo-400">software developer</span> with
+        experience in building web applications using
+        <span className="text-blue-600 dark:text-blue-400"> React</span>,
+        <span className="text-green-600 dark:text-green-400"> TypeScript</span>,
+        <span className="text-yellow-600 dark:text-yellow-400"> Node.js</span>, and more. I enjoy learning new
+        technologies and creating
+        <span className="text-pink-600 dark:text-pink-400"> fun</span>,
+        <span className="text-emerald-600 dark:text-emerald-400"> efficient solutions</span>.
       </p>
 
       {/* Two Columns Container */}
