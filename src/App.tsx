@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   const [theme, setTheme] = useState<"light" | "dark">(() =>
-    localStorage.getItem("theme") === "dark" ? "dark" : "light"
+    localStorage.getItem("theme") === "light" ? "light" : "dark"
   );
 
   useEffect(() => {
@@ -25,8 +25,7 @@ const App = () => {
   const lightBgColors = ["bg-white", "bg-gray-50"];
   const darkBgColors = ["bg-gray-900", "bg-gray-800"];
 
-  const getBgClass = (index: number) =>
-    theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2];
+  const getBgClass = (index: number) => (theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2]);
 
   return (
     <div
@@ -41,10 +40,7 @@ const App = () => {
 
       {/* Add top padding equal to navbar height (e.g., 64px = 16 * 4) */}
       <main className="pt-0">
-        <section
-          id="home"
-          className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
-        >
+        <section id="home" className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
           <Home />
         </section>
 
@@ -69,11 +65,7 @@ const App = () => {
           <Projects />
         </section>
 
-
-        <section
-          id="contact"
-          className={`${getBgClass(4)} min-h-screen pt-12`}
-        >
+        <section id="contact" className={`${getBgClass(4)} min-h-screen pt-12`}>
           <Contact />
         </section>
       </main>
