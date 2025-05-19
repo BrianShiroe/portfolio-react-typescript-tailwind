@@ -10,6 +10,7 @@ const About = () => {
     "Dean's Lister",
     "PAIR Research Conference Best Oral Research Presenter",
     "PAIR Research Conference Best Abstract",
+    "Rank 20th in 2024 Appcon Competition",
     "CCNAv7: Introduction to Networks",
     "PCAP: Programming Essentials in Python",
     "Cisco: Introduction to IoT",
