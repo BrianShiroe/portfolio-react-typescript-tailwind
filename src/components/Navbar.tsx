@@ -23,7 +23,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   const handleLinkClick = () => setMobileMenuOpen(false);
 
   // Added "skills" to the sections array
-  const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+  const sections = ['home', 'about', 'skills', 'projects', 'contact'];
 
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md px-4 py-3 transition-colors duration-300">

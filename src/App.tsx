@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Skills from "./pages/Skills";
 
 const App = () => {
   const [theme, setTheme] = useState<"light" | "dark">(() =>
@@ -56,18 +56,19 @@ const App = () => {
         </section>
 
         <section
-          id="projects"
+          id="skills"
           className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
+          <Skills />
+        </section>
+
+        <section
+          id="projects"
+          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
         >
           <Projects />
         </section>
 
-        <section
-          id="skills"
-          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
-        >
-          <Skills />
-        </section>
 
         <section
           id="contact"

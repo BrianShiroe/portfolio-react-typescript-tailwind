@@ -22,7 +22,8 @@ const skills = {
   ],
   "Development Tools and Platforms": [
     "Git/GitHub (Intermediate)",
-    "VSCode/Visual Studio (Intermediate)",
+    "VSCode (Intermediate)",
+    "Visual Studio (Intermediate)",
     "Jira/Trello (Intermediate)",
     "Docker (Beginner)",
     "LLM (Intermediate)",
@@ -30,18 +31,19 @@ const skills = {
   "Machine Learning": [
     "Yolo (Intermediate)",
     "OpenCV (Intermediate)",
-    "TensorFlow/PyTorch (Beginner)",
+    "TensorFlow (Beginner)",
+    "PyTorch (Beginner)",
   ],
 };
 
 const Skills = () => (
-  <div className="p-6 max-w-5xl mx-auto">
+  <div className="p-6 max-w-6xl mx-auto">
     <h1 className="text-4xl font-bold mb-10 text-center">Skills & Tools</h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {Object.entries(skills).map(([category, items]) => (
-        <section key={category}>
+        <section key={category} className="p-5 bg-gray-100 rounded-lg dark:bg-gray-800">
           <h2 className="text-2xl font-semibold mb-4">{category}</h2>
-          <ul className="list-disc list-inside space-y-1 text-lg">
+          <ul className="list-disc list-inside space-y-2 text-lg">
             {items.map((skill) => (
               <li key={skill}>{skill}</li>
             ))}
