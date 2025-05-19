@@ -3,6 +3,10 @@
   <a href="https://brianshiroe.netlify.app" target="_blank">brianshiroe.netlify.app</a>
 </h2>
 
+---
+
+![Portfolio Demo](./public/images/demo/portfolio-demo.png)
+
 ## Description
 
 Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [Brian Haw](https://github.com/BrianShiroe). Thank you!
