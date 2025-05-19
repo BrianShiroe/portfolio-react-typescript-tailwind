@@ -21,14 +21,19 @@ const About = () => {
     <div className="p-6 max-w-5xl mx-auto min-h-screen">
       <h2 className="text-4xl font-semibold mb-6 text-center">About Me</h2>
       <p className="mb-10 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center">
-        I'm a passionate <span className="text-indigo-600 dark:text-indigo-400">software developer</span> with
-        experience in building web applications using
-        <span className="text-blue-600 dark:text-blue-400"> React</span>,
-        <span className="text-green-600 dark:text-green-400"> TypeScript</span>,
-        <span className="text-yellow-600 dark:text-yellow-400"> Node.js</span>, and more. I enjoy learning new
-        technologies and creating
-        <span className="text-pink-600 dark:text-pink-400"> fun</span>,
-        <span className="text-emerald-600 dark:text-emerald-400"> efficient solutions</span>.
+        I’m a <span className="text-indigo-600 dark:text-indigo-400">software developer</span> with a passion for
+        continuous growth in
+        <span className="text-blue-600 dark:text-blue-400"> web technologies</span>,
+        <span className="text-green-600 dark:text-green-400"> software engineering</span>, and
+        <span className="text-yellow-600 dark:text-yellow-400"> machine learning</span>. Like a dedicated gamer
+        mastering new levels, I approach each project with
+        <span className="text-pink-600 dark:text-pink-400"> patience</span>,
+        <span className="text-emerald-600 dark:text-emerald-400"> persistence</span>, and a focus on building
+        <span className="text-purple-600 dark:text-purple-400"> reliable</span>,
+        <span className="text-cyan-600 dark:text-cyan-400"> efficient</span>, and
+        <span className="text-rose-600 dark:text-rose-400"> scalable</span> applications. I value
+        <span className="text-indigo-600 dark:text-indigo-400"> collaboration</span> and learning from every challenge
+        to deliver solutions that truly make a difference.
       </p>
 
       {/* Two Columns Container */}
