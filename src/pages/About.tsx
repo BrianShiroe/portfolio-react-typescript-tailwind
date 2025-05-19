@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div className="p-6 max-w-5xl mx-auto min-h-screen">
       <h2 className="text-4xl font-semibold mb-6 text-center">About Me</h2>
-      <p className="mb-10 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center">
+      <p className="mb-10 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center text-justify">
         I’m a <span className="text-indigo-600 dark:text-indigo-400">software developer</span> with a passion for
         continuous growth in
         <span className="text-blue-600 dark:text-blue-400"> web technologies</span>,

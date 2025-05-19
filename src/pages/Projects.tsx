@@ -165,7 +165,7 @@ const ProjectCard: React.FC<Project> = ({
         {icon}
         <span>{title}</span>
       </h2>
-      <p className="mb-4">{description}</p>
+      <p className="mb-4 text-justify">{description}</p>
       <div>
         <a
           href={link}
