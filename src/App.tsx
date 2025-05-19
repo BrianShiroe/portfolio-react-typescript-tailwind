@@ -1,18 +1,21 @@
 // src/App.tsx
-// Root application component with theme handling and section routing.
+// Root component managing layout, theming, and routing for all main sections.
+// Implements light/dark mode, background transitions, and fixed Navbar.
+// Sections include Home, About, Skills, Projects (Academic & Personal), and Contact.
 
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
+import ProjectsAcademic from "./pages/ProjectsAcademic";
+import ProjectsPersonal from "./pages/ProjectsPersonal";
 import Contact from "./pages/Contact";
-import { getInitialTheme, applyTheme, toggleThemeValue }  from "./utils/theme";
-import type { Theme }  from "./utils/theme";
+import { getInitialTheme, applyTheme, toggleThemeValue } from "./utils/theme";
+import type { Theme } from "./utils/theme";
 
 const App = () => {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     const initialTheme = getInitialTheme();
@@ -43,19 +46,37 @@ const App = () => {
       </div>
 
       <main className="pt-0">
-        <section id="home" className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
+        <section
+          id="home"
+          className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
           <Home />
         </section>
-        <section id="about" className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}>
+        <section
+          id="about"
+          className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
+        >
           <About />
         </section>
-        <section id="skills" className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}>
+        <section
+          id="skills"
+          className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
+        >
           <Skills />
         </section>
-        <section id="projects" className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}>
-          <Projects />
+        <section
+          id="projects-academic"
+          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
+        >
+          <ProjectsAcademic />
         </section>
-        <section id="contact" className={`${getBgClass(4)} min-h-screen pt-12`}>
+        <section
+          id="projects-personal"
+          className={`${getBgClass(4)} min-h-screen border-b border-gray-300 dark:border-gray-700 pt-12`}
+        >
+          <ProjectsPersonal />
+        </section>
+        <section id="contact" className={`${getBgClass(5)} min-h-screen pt-12`}>
           <Contact />
         </section>
       </main>
