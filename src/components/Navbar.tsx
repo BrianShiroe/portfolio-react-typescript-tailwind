@@ -22,15 +22,18 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   const toggleMobileMenu = () => setMobileMenuOpen((open) => !open);
   const handleLinkClick = () => setMobileMenuOpen(false);
 
+  // Added "skills" to the sections array
+  const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md px-4 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">MyPortfolio</h1>
+        <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">Hi! I'm Brian. ^_^</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
-          {['home', 'about', 'projects', 'contact'].map((section) => (
+          {sections.map((section) => (
             <a
               key={section}
               href={`#${section}`}
@@ -77,7 +80,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
         className="md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out"
       >
         <div className="flex flex-col gap-2 mt-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-b shadow">
-          {['home', 'about', 'projects', 'contact'].map((section) => (
+          {sections.map((section) => (
             <a
               key={section}
               onClick={handleLinkClick}

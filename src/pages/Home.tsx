@@ -2,7 +2,6 @@
 // Description: Responsive and accessible home page featuring a profile image,
 // animated heroicons, and professional introduction with dark mode support.
 
-import profilePic from "../assets/images/profile-picture.png";
 import { CodeBracketIcon, AcademicCapIcon } from "@heroicons/react/24/outline";
 
 const Home = () => (
@@ -13,7 +12,7 @@ const Home = () => (
       aria-label="Profile picture of Brian O. Haw"
     >
       <img
-        src={profilePic}
+        src="/images/home-images/profile-picture.png"
         alt="Brian O. Haw smiling"
         className="w-full h-full object-cover"
         loading="lazy"

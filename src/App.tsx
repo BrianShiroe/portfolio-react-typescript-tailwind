@@ -1,14 +1,10 @@
-// File: App.tsx
-// Description: Main application component managing theme toggling (light/dark),
-// applying clean and subtle background shades for light and dark mode sections,
-// render Navbar and page sections with smooth transitions and accessible structure.
-
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 
 const App = () => {
   const [theme, setTheme] = useState<"light" | "dark">(() =>
@@ -29,7 +25,8 @@ const App = () => {
   const lightBgColors = ["bg-white", "bg-gray-50"];
   const darkBgColors = ["bg-gray-900", "bg-gray-800"];
 
-  const getBgClass = (index: number) => (theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2]);
+  const getBgClass = (index: number) =>
+    theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2];
 
   return (
     <div
@@ -44,11 +41,17 @@ const App = () => {
 
       {/* Add top padding equal to navbar height (e.g., 64px = 16 * 4) */}
       <main className="pt-16">
-        <section id="home" className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
+        <section
+          id="home"
+          className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
           <Home />
         </section>
 
-        <section id="about" className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
+        <section
+          id="about"
+          className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
           <About />
         </section>
 
@@ -59,7 +62,17 @@ const App = () => {
           <Projects />
         </section>
 
-        <section id="contact" className={`${getBgClass(3)} min-h-screen`}>
+        <section
+          id="skills"
+          className={`${getBgClass(3)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
+          <Skills />
+        </section>
+
+        <section
+          id="contact"
+          className={`${getBgClass(4)} min-h-screen`}
+        >
           <Contact />
         </section>
       </main>
