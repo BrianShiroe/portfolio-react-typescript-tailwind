@@ -3,18 +3,6 @@
   <a href="https://brianshiroe.netlify.app" target="_blank">brianshiroe.netlify.app</a>
 </h2>
 
-<div align="center">
-  <img alt="Portfolio Demo" src="./images/portfolio-demo.png" />
-</div>
-
-<br/>
-
-<center>
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-</center>
-
 ## Description
 
 Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [Brian Haw](https://github.com/BrianShiroe). Thank you!
