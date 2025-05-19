@@ -15,6 +15,16 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState("0px");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     if (menuRef.current) {
@@ -40,21 +50,25 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
     {
       name: "projects-academic",
       icon: <FaFolderOpen className="inline mr-1" />,
-      // Change the label value as needed for UI display (e.g. "Project" as requested)
       label: "Project",
     },
     { name: "contact", icon: <FaEnvelope className="inline mr-1" /> },
   ];
 
   const renderLinkText = (section: { name: string; label?: string }) => {
-    // If a label exists, use it; otherwise, format the name
     return section.label || (section.name.charAt(0).toUpperCase() + section.name.slice(1));
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md px-4 py-3 transition-colors duration-300">
+    <nav
+      className={`fixed top-0 w-full z-50 px-4 py-4 transition-colors duration-500 ${
+        isScrolled
+          ? "bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100">
           Hi! I'm Brian. ^_^
         </h1>
 
@@ -65,7 +79,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
               key={section.name}
               href={`#${section.name}`}
               onClick={(e) => handleSmoothScroll(e, section.name)}
-              className="text-sm sm:text-base text-gray-900 dark:text-gray-100 hover:underline px-2 py-1 flex items-center"
+              className="text-base sm:text-lg text-gray-900 dark:text-gray-100 hover:underline px-2 py-1 flex items-center"
             >
               {section.icon}
               {renderLinkText(section)}
@@ -74,7 +88,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           <button
             onClick={toggleTheme}
             aria-label="Toggle Theme"
-            className="text-sm sm:text-base px-3 py-1 text-gray-900 dark:text-gray-100 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 flex items-center"
+            className="text-base sm:text-lg px-3 py-1 text-gray-900 dark:text-gray-100 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 flex items-center"
           >
             {theme === "light" ? <FaMoon className="mr-1" /> : <FaSun className="mr-1" />}
             {theme === "light" ? "Dark" : "Light"}

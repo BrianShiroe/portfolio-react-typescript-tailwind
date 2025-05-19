@@ -63,7 +63,7 @@ const Home = () => {
         aria-label="Professional description"
         className="mt-3 px-4 max-w-2xl text-lg sm:text-xl font-medium text-gray-700 dark:text-gray-300 inline-flex items-center justify-center text-center space-x-2"
       >
-        <span>· Full Stack Developer · Machine Learning, AI & Game Enthusiast ·</span>
+        <span>· Full Stack Developer · Machine Learning, AI & Game Developemnt Enthusiast ·</span>
       </section>
     </main>
   );
