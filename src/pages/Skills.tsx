@@ -1,3 +1,6 @@
+// src/pages/Skills.tsx
+// Skills section displaying categorized technical proficiencies.
+
 const skills = {
   "Programming Languages": [
     "JavaScript (Intermediate)",

@@ -1,3 +1,6 @@
+// src/main.tsx
+// Entry point: renders the App component wrapped with React Router and StrictMode
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

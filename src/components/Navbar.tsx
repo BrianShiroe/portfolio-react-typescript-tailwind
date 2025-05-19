@@ -1,10 +1,8 @@
-// Navbar.tsx
-// Responsive Navbar component with dark/light theme toggle and animated mobile menu
-
 import { useState, useRef, useEffect } from 'react';
+import type { Theme } from '../utils/theme'; // type-only import
 
 interface NavbarProps {
-  theme: 'light' | 'dark';
+  theme: Theme;
   toggleTheme: () => void;
 }
 
@@ -20,16 +18,24 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   }, [mobileMenuOpen]);
 
   const toggleMobileMenu = () => setMobileMenuOpen((open) => !open);
-  const handleLinkClick = () => setMobileMenuOpen(false);
+  
+  const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement>, section: string) => {
+    event.preventDefault();
+    const target = document.getElementById(section);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false); // close mobile menu if open
+  };
 
-  // Added "skills" to the sections array
   const sections = ['home', 'about', 'skills', 'projects', 'contact'];
 
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md px-4 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">Hi! I'm Brian. ^_^</h1>
+        <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">
+          Hi! I'm Brian. ^_^
+        </h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
@@ -37,6 +43,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
             <a
               key={section}
               href={`#${section}`}
+              onClick={(e) => handleSmoothScroll(e, section)}
               className="text-sm sm:text-base text-gray-900 dark:text-gray-100 hover:underline px-2 py-1"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -83,8 +90,8 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           {sections.map((section) => (
             <a
               key={section}
-              onClick={handleLinkClick}
               href={`#${section}`}
+              onClick={(e) => handleSmoothScroll(e, section)}
               className="text-gray-900 dark:text-gray-100 hover:underline py-2"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

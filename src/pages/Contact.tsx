@@ -1,3 +1,6 @@
+// src/pages/Contact.tsx
+// Displays contact methods and personal information for hiring inquiries.
+
 import {
   FaFacebook,
   FaLinkedin,

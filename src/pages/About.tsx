@@ -1,5 +1,5 @@
-// File: About.tsx
-// Description: About page component displaying personal bio, education background, and academic achievements with styled sections in two columns, including Cloudflare (Heroicons) icons.
+// src/pages/About.tsx
+// Displays personal background, education details, and academic achievements.
 
 import { AcademicCapIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 

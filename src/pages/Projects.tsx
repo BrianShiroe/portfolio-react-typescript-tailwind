@@ -1,3 +1,7 @@
+// src/pages/Projects.tsx
+// Displays categorized academic and personal projects.
+// Each project includes a title, icon, description, image, and link.
+
 import React from "react";
 import type { ReactNode } from "react";
 import { FaRobot, FaGlobe, FaDesktop, FaGamepad } from "react-icons/fa";
@@ -171,7 +175,11 @@ const ProjectCard: React.FC<Project> = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn inline-block px-4 py-2 rounded text-white font-semibold"
+          className={`btn inline-block px-4 py-2 rounded font-semibold transition-colors duration-300 ${
+            disabled
+              ? "bg-red-600 text-white cursor-not-allowed"
+              : "bg-indigo-600 hover:bg-indigo-700 text-white dark:bg-indigo-400 dark:hover:bg-indigo-500"
+          }`}
           style={btnStyle}
           aria-disabled={disabled}
           tabIndex={disabled ? -1 : undefined}
