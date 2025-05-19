@@ -36,14 +36,15 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-- Node.js (v16 or higher recommended)  
+- Node.js
 - Git  
 
 ## 🛠 Installation and Setup Instructions
 
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
+1. Install npm: `npm install`
+2. Install tailwind `npm install -D tailwindcss@3 postcss autoprefixer`
+3. Run `npx tailwindcss init -p`
+4. Run the project using `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
