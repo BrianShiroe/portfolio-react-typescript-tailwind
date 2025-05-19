@@ -4,7 +4,15 @@
 
 import { useState, useRef, useEffect } from "react";
 import type { Theme } from "../utils/theme";
-import { FaHome, FaUser, FaTools, FaFolderOpen, FaEnvelope, FaSun, FaMoon } from "react-icons/fa";
+import {
+  HomeIcon,
+  UserIcon,
+  WrenchIcon,
+  FolderOpenIcon,
+  EnvelopeIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/outline";
 
 interface NavbarProps {
   theme: Theme;
@@ -44,33 +52,29 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   };
 
   const sections = [
-    { name: "home", icon: <FaHome className="inline mr-1" /> },
-    { name: "about", icon: <FaUser className="inline mr-1" /> },
-    { name: "skills", icon: <FaTools className="inline mr-1" /> },
+    { name: "home", icon: <HomeIcon className="w-5 h-5 inline mr-1" /> },
+    { name: "about", icon: <UserIcon className="w-5 h-5 inline mr-1" /> },
+    { name: "skills", icon: <WrenchIcon className="w-5 h-5 inline mr-1" /> },
     {
       name: "projects-academic",
-      icon: <FaFolderOpen className="inline mr-1" />,
+      icon: <FolderOpenIcon className="w-5 h-5 inline mr-1" />,
       label: "Project",
     },
-    { name: "contact", icon: <FaEnvelope className="inline mr-1" /> },
+    { name: "contact", icon: <EnvelopeIcon className="w-5 h-5 inline mr-1" /> },
   ];
 
   const renderLinkText = (section: { name: string; label?: string }) => {
-    return section.label || (section.name.charAt(0).toUpperCase() + section.name.slice(1));
+    return section.label || section.name.charAt(0).toUpperCase() + section.name.slice(1);
   };
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 px-4 py-4 transition-colors duration-500 ${
-        isScrolled
-          ? "bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-md"
-          : "bg-transparent"
+        isScrolled || mobileMenuOpen ? "bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100">
-          Hi! I'm Brian. ^_^
-        </h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100">Hi! I'm Brian. ^_^</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
@@ -90,7 +94,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
             aria-label="Toggle Theme"
             className="text-base sm:text-lg px-3 py-1 text-gray-900 dark:text-gray-100 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 flex items-center"
           >
-            {theme === "light" ? <FaMoon className="mr-1" /> : <FaSun className="mr-1" />}
+            {theme === "light" ? <MoonIcon className="w-5 h-5 mr-1" /> : <SunIcon className="w-5 h-5 mr-1" />}
             {theme === "light" ? "Dark" : "Light"}
           </button>
         </div>
@@ -123,7 +127,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
         style={{ maxHeight }}
         className="md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out"
       >
-        <div className="flex flex-col gap-2 mt-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-b shadow">
+        <div className="flex flex-col gap-2 mt-2 px-4 py-2">
           {sections.map((section) => (
             <a
               key={section.name}
@@ -143,7 +147,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
             aria-label="Toggle Theme"
             className="text-left text-gray-900 dark:text-gray-100 hover:underline py-2 flex items-center"
           >
-            {theme === "light" ? <FaMoon className="mr-1" /> : <FaSun className="mr-1" />}
+            {theme === "light" ? <MoonIcon className="w-5 h-5 mr-1" /> : <SunIcon className="w-5 h-5 mr-1" />}
             {theme === "light" ? "Dark" : "Light"}
           </button>
         </div>
