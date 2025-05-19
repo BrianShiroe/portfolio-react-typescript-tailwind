@@ -5,9 +5,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        jetbrains: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        inter: ['Inter', 'ui-sans-serif', 'system-ui'],
+        jetbrains: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular'],
       },
     },
   },
   plugins: [],
 };
+

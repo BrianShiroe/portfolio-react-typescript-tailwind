@@ -1,43 +1,68 @@
-// App.tsx
-import { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+// File: App.tsx
+// Description: Main application component managing theme toggling (light/dark),
+// applying clean and subtle background shades for light and dark mode sections,
+// render Navbar and page sections with smooth transitions and accessible structure.
+
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const App = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
-    }
-    return 'light';
-  });
+  const [theme, setTheme] = useState<"light" | "dark">(() =>
+    localStorage.getItem("theme") === "dark" ? "dark" : "light"
+  );
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    const root = document.documentElement;
+    root.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
+  // Clean, easy-on-the-eyes shades of white for light mode
+  const lightBgColors = ["bg-white", "bg-gray-50"];
+  const darkBgColors = ["bg-gray-900", "bg-gray-800"];
+
+  const getBgClass = (index: number) => (theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2]);
+
   return (
-    <div className={`${theme === 'dark' ? 'font-jetbrains' : 'font-mono'} text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300`}>
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+    <div
+      className={`${
+        theme === "dark" ? "font-mono bg-gray-900" : "font-inter bg-white"
+      } text-gray-800 dark:text-gray-200 transition-colors duration-300 min-h-screen`}
+    >
+      {/* Fixed Navbar */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
+      </div>
+
+      {/* Add top padding equal to navbar height (e.g., 64px = 16 * 4) */}
+      <main className="pt-16">
+        <section id="home" className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
+          <Home />
+        </section>
+
+        <section id="about" className={`${getBgClass(1)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
+          <About />
+        </section>
+
+        <section
+          id="projects"
+          className={`${getBgClass(2)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
+        >
+          <Projects />
+        </section>
+
+        <section id="contact" className={`${getBgClass(3)} min-h-screen`}>
+          <Contact />
+        </section>
+      </main>
     </div>
   );
 };

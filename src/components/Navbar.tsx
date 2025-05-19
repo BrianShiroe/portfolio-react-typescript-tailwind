@@ -2,7 +2,6 @@
 // Responsive Navbar component with dark/light theme toggle and animated mobile menu
 
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   theme: 'light' | 'dark';
@@ -27,6 +26,11 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
 
   const toggleMobileMenu = () => setMobileMenuOpen((open) => !open);
 
+  // Close mobile menu on link click
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white dark:bg-gray-800 shadow p-4 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -35,10 +39,10 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-4 items-center">
-          <Link className="text-gray-900 dark:text-gray-100 hover:underline" to="/">Home</Link>
-          <Link className="text-gray-900 dark:text-gray-100 hover:underline" to="/about">About</Link>
-          <Link className="text-gray-900 dark:text-gray-100 hover:underline" to="/projects">Projects</Link>
-          <Link className="text-gray-900 dark:text-gray-100 hover:underline" to="/contact">Contact</Link>
+          <a className="text-gray-900 dark:text-gray-100 hover:underline" href="#home">Home</a>
+          <a className="text-gray-900 dark:text-gray-100 hover:underline" href="#about">About</a>
+          <a className="text-gray-900 dark:text-gray-100 hover:underline" href="#projects">Projects</a>
+          <a className="text-gray-900 dark:text-gray-100 hover:underline" href="#contact">Contact</a>
           <button
             onClick={toggleTheme}
             aria-label="Toggle Theme"
@@ -79,34 +83,34 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
         className="md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out"
       >
         <div className="mt-2 space-y-2 px-2 py-2 bg-white dark:bg-gray-800 rounded-b shadow-md">
-          <Link
-            onClick={() => setMobileMenuOpen(false)}
+          <a
+            onClick={handleLinkClick}
             className="block text-gray-900 dark:text-gray-100 hover:underline"
-            to="/"
+            href="#home"
           >
             Home
-          </Link>
-          <Link
-            onClick={() => setMobileMenuOpen(false)}
+          </a>
+          <a
+            onClick={handleLinkClick}
             className="block text-gray-900 dark:text-gray-100 hover:underline"
-            to="/about"
+            href="#about"
           >
             About
-          </Link>
-          <Link
-            onClick={() => setMobileMenuOpen(false)}
+          </a>
+          <a
+            onClick={handleLinkClick}
             className="block text-gray-900 dark:text-gray-100 hover:underline"
-            to="/projects"
+            href="#projects"
           >
             Projects
-          </Link>
-          <Link
-            onClick={() => setMobileMenuOpen(false)}
+          </a>
+          <a
+            onClick={handleLinkClick}
             className="block text-gray-900 dark:text-gray-100 hover:underline"
-            to="/contact"
+            href="#contact"
           >
             Contact
-          </Link>
+          </a>
           <button
             onClick={() => {
               toggleTheme();
