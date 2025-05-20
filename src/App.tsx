@@ -13,14 +13,25 @@ import ProjectsPersonal from "./pages/ProjectsPersonal";
 import Contact from "./pages/Contact";
 import { getInitialTheme, applyTheme, toggleThemeValue } from "./utils/theme";
 import type { Theme } from "./utils/theme";
+import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
   const [theme, setTheme] = useState<Theme>("light");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const initialTheme = getInitialTheme();
     setTheme(initialTheme);
     applyTheme(initialTheme);
+  }, []);
+
+  useEffect(() => {
+    // Simulate loading delay (e.g., 2 seconds)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const toggleTheme = () => {
@@ -32,8 +43,11 @@ const App = () => {
   const lightBgColors = ["bg-white", "bg-gray-50"];
   const darkBgColors = ["bg-gray-900", "bg-gray-800"];
 
-  const getBgClass = (index: number) =>
-    theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2];
+  const getBgClass = (index: number) => (theme === "light" ? lightBgColors[index % 2] : darkBgColors[index % 2]);
+
+  if (isLoading) {
+    return <LoadingScreen theme={theme} />;
+  }
 
   return (
     <div
@@ -46,10 +60,7 @@ const App = () => {
       </div>
 
       <main className="pt-0">
-        <section
-          id="home"
-          className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}
-        >
+        <section id="home" className={`${getBgClass(0)} min-h-screen border-b border-gray-300 dark:border-gray-700`}>
           <Home />
         </section>
         <section

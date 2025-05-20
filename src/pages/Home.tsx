@@ -36,10 +36,7 @@ const Home = () => {
       {/* Header Section */}
       <header aria-label="Welcome section" className="space-y-3 px-4">
         <h2 className="text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
-          <span
-            ref={welcomeRef}
-            className={`typewriter ${typingDone ? "finished" : ""}`}
-          >
+          <span ref={welcomeRef} className={`typewriter ${typingDone ? "finished" : ""}`}>
             Welcome to My Portfolio
           </span>
         </h2>
@@ -60,9 +57,7 @@ const Home = () => {
       </div>
 
       {/* Name Section */}
-      <h1
-        className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide"
-      >
+      <h1 className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide">
         <button
           onClick={scrollToAbout}
           aria-label="Scroll to About section"
