@@ -34,7 +34,7 @@ const projectsAcademic: Project[] = [
       The detection model was trained on 18k image data, with 100 epochs, 640 image size, 16 batch size, and 8 workers.`,
     imgSrc: "/images/project-images/project7.jpg",
     link: "https://github.com/LCbalsa/calbi-luka.git",
-    linkText: "Polishing!",
+    linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
   },
