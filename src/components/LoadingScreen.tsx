@@ -31,9 +31,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ theme }) => {
         </div>
       </div>
 
-      <h1 className={`mt-8 text-3xl font-semibold tracking-wide select-none ${textColor}`}>
-        Loading Portfolio...
-      </h1>
+      <h1 className={`mt-8 text-3xl font-semibold tracking-wide select-none ${textColor}`}>Loading Portfolio...</h1>
 
       <style>{`
         .perspective-800 {

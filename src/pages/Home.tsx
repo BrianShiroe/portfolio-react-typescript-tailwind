@@ -36,7 +36,7 @@ const Home = () => {
       {/* Header Section */}
       <header aria-label="Welcome section" className="space-y-3 px-4">
         <h2 className="text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
-          <span ref={welcomeRef} className={`typewriter ${typingDone ? "finished" : ""}`}>
+          <span ref={welcomeRef} className={`typewriter ${typingDone ? "finished" : ""} px-4 py-2`}>
             Welcome to My Portfolio
           </span>
         </h2>
