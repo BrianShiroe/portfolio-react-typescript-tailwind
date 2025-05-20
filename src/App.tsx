@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import { getInitialTheme, applyTheme, toggleThemeValue } from "./utils/theme";
 import type { Theme } from "./utils/theme";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState<Theme>("light");
@@ -53,7 +54,7 @@ const App = () => {
     <div
       className={`${
         theme === "dark" ? "font-mono bg-gray-900" : "font-inter bg-white"
-      } text-gray-800 dark:text-gray-200 transition-colors duration-300 min-h-screen`}
+      } text-gray-800 dark:text-gray-200 transition-colors duration-300 min-h-screen flex flex-col`}
     >
       <div className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 shadow-md">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
@@ -91,6 +92,7 @@ const App = () => {
           <Contact />
         </section>
       </main>
+      <Footer theme={theme} />
     </div>
   );
 };
