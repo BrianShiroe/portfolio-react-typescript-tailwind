@@ -14,10 +14,11 @@ const About = () => {
   ];
 
   const awardsAndCertificates = [
-    "CCNAv7: Introduction to Networking",
+    "CLP: Advanced Programming in C",
+    "CLA: Programming Essentials in C",
+    "CCNAv7: Introduction to Networking", 
     "PCAP: Programming Essentials in Python",
     "Cisco: Introduction to IoT",
-    "CLA: Programming Essentials in C",
   ];
 
   const educationDetails = [

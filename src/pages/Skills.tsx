@@ -3,8 +3,9 @@
 
 const skills = {
   "Programming Languages": [
+    "Python (Advanced)",
     "JavaScript (Intermediate)",
-    "Python (Intermediate)",
+    "Typescript (Intermediate)",
     "PHP (Intermediate)",
     "C# (Intermediate)",
     "Gdscript (Intermediate)",
@@ -17,6 +18,7 @@ const skills = {
     "Bootstrap (Intermediate)",
     "Flask (Intermediate)",
     "React.js (Beginner)",
+    "Tailwind CSS (Beginner)",
   ],
   "Databases": [
     "MySQL (Intermediate)",
