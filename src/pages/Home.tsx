@@ -17,7 +17,7 @@ const Home = () => {
       {/* Header Section */}
       <header aria-label="Welcome section" className="space-y-3 px-4">
         <h2 className="text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
-          <span className="text-gray-600 dark:text-gray-400">Welcome to My Portfolio</span>
+          <span>Welcome to My Portfolio</span>
         </h2>
       </header>
 
@@ -61,7 +61,7 @@ const Home = () => {
       {/* Description Section */}
       <section
         aria-label="Professional description"
-        className="mt-3 px-4 max-w-2xl text-lg sm:text-xl font-medium text-gray-700 dark:text-gray-300 inline-flex items-center justify-center text-center space-x-2"
+        className="mt-3 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
       >
         <span>· Full Stack Developer · Machine Learning, AI & Game Developemnt Enthusiast ·</span>
       </section>
