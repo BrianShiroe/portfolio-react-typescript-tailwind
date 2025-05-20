@@ -3,7 +3,7 @@
 
 const skills = {
   "Programming Languages": [
-    "Python (Advanced)",
+    "Python (Intermediate)",
     "JavaScript (Intermediate)",
     "Typescript (Intermediate)",
     "PHP (Intermediate)",
