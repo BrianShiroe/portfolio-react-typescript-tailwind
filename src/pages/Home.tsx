@@ -2,9 +2,13 @@
 // Displays the homepage with a welcome message, profile picture, and user intro.
 // Includes animated name banner and short professional description.
 
+import { useState, useEffect, useRef } from "react";
 import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
 
 const Home = () => {
+  const [typingDone, setTypingDone] = useState(false);
+  const welcomeRef = useRef<HTMLSpanElement>(null);
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
@@ -12,12 +16,32 @@ const Home = () => {
     }
   };
 
+  useEffect(() => {
+    const handleAnimationEnd = () => setTypingDone(true);
+    const node = welcomeRef.current;
+
+    if (node) {
+      node.addEventListener("animationend", handleAnimationEnd);
+    }
+
+    return () => {
+      if (node) {
+        node.removeEventListener("animationend", handleAnimationEnd);
+      }
+    };
+  }, []);
+
   return (
     <main className="p-6 md:p-12 flex flex-col items-center justify-center min-h-screen max-w-5xl mx-auto text-center">
       {/* Header Section */}
       <header aria-label="Welcome section" className="space-y-3 px-4">
         <h2 className="text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
-          <span className="text-gray-600 dark:text-gray-400">Welcome to My Portfolio</span>
+          <span
+            ref={welcomeRef}
+            className={`typewriter ${typingDone ? "finished" : ""}`}
+          >
+            Welcome to My Portfolio
+          </span>
         </h2>
       </header>
 
@@ -36,7 +60,9 @@ const Home = () => {
       </div>
 
       {/* Name Section */}
-      <h1 className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide">
+      <h1
+        className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide"
+      >
         <button
           onClick={scrollToAbout}
           aria-label="Scroll to About section"
