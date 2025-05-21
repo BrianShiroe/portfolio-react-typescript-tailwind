@@ -16,7 +16,7 @@ const Home = () => {
     <main className="p-6 md:p-12 flex flex-col items-center justify-center min-h-screen max-w-5xl mx-auto text-center">
       {/* Header Section */}
       <header aria-label="Welcome section" className="space-y-3 px-4">
-        <h2 className="text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
+        <h2 className="mt-6 mb-6 text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
           <span>Welcome to My Portfolio</span>
         </h2>
       </header>
@@ -61,9 +61,9 @@ const Home = () => {
       {/* Description Section */}
       <section
         aria-label="Professional description"
-        className="mt-3 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
+        className="mt-10 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
       >
-        <span>· Full Stack Developer · Machine Learning, AI & Game Developemnt Enthusiast ·</span>
+        <span>· Full Stack · Machine Learning · Python Developer ·</span>
       </section>
     </main>
   );

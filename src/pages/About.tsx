@@ -16,7 +16,7 @@ const About = () => {
   const awardsAndCertificates = [
     "CLP: Advanced Programming in C",
     "CLA: Programming Essentials in C",
-    "CCNAv7: Introduction to Networking", 
+    "CCNAv7: Introduction to Networking",
     "PCAP: Programming Essentials in Python",
     "Cisco: Introduction to IoT",
   ];
@@ -33,20 +33,22 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        I’m a <span className="text-indigo-600 dark:text-indigo-400 font-semibold">software developer</span> with a
-        passion for continuous growth in&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">web technologies</span>,&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">software engineering</span>, and&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">machine learning</span>. Like a dedicated
-        gamer mastering new levels, I approach each project with&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">patience</span>,&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">persistence</span>, and a focus on
-        building&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">reliable</span>,&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">efficient</span>, and&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">scalable</span> applications. I value&nbsp;
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">collaboration</span> and learning
-        from&nbsp; every challenge to deliver solutions that truly make a difference.
+        I’m a <span className="text-indigo-600 dark:text-indigo-400 font-semibold">former lead developer</span> who
+        architected
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">computer vision AI systems</span> featuring
+        emergent heuristics that perform
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">meta-cognitive audits</span> of their own
+        operational ontology — enabling anomaly detection and
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">recursive disruptions</span> in
+        self-referential state coherence. As the
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Principal Disruption Strategist</span> at
+        the Institute of Unsolicited Innovation™, I pioneered
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">
+          scalable spaghetti architectures
+        </span>{" "}
+        atop cutting-edge frameworks, optimizing entropy as a feature, not a bug. I successfully transitioned systems
+        from functional to strictly local, always aspiring to be among the
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">greatest developers that ever lived</span>.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}

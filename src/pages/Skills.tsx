@@ -16,9 +16,9 @@ const skills = {
     "HTML5 (Intermediate)",
     "CSS3 (Intermediate)",
     "Bootstrap (Intermediate)",
+    "Flask (Intermediate)",
     "React.js (Beginner)",
     "Next.js (Beginner)",
-    "Flask (Beginner)",
     "Tailwind CSS (Beginner)",
   ],
   "Databases": [
