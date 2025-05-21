@@ -5,9 +5,9 @@ const skills = {
   "Programming Languages": [
     "Python (Intermediate)",
     "JavaScript (Intermediate)",
-    "Gdscript (Intermediate)",
+    "Typescript (Intermediate)",
     "PHP (Intermediate)",
-    "Typescript (Beginner)",
+    "Gdscript (Intermediate)",
     "C# (Beginner)",
     "C/C++ (Beginner)",
     "Java (Beginner)",
@@ -29,13 +29,13 @@ const skills = {
   "Development Tools and Platforms": [
     "VS/VSCode (Intermediate)",
     "LLM (Intermediate)",
-    "Git/GitHub (Beginner)",
+    "Git/GitHub (Intermediate)",
     "Jira/Trello (Beginner)",
     "Docker (Beginner)",
   ],
   "Machine Learning": [
-    "Yolo (Beginner)",
-    "OpenCV (Beginner)",
+    "Yolo (Intermediate)",
+    "OpenCV (Intermediate)",
     "TensorFlow (Beginner)",
     "PyTorch (Beginner)",
   ],
