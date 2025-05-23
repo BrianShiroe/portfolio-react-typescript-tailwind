@@ -16,7 +16,7 @@ import {
 
 const Contact = () => (
   <div className="p-6 max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold mb-6 text-center text-green-700 dark:text-green-400">HIRE ME!</h2>
+    <h2 className="text-4xl font-bold mb-6 text-center text-green-700 dark:text-green-400">CONTACTS!</h2>
     <p className="mb-6 text-center text-lg font-medium">Contact me through these methods:</p>
 
     <div className="flex flex-col md:flex-row md:space-x-12">
