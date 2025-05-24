@@ -41,12 +41,30 @@ To get a local copy up and running follow these simple steps.
 
 ## 🛠 Installation and Setup Instructions
 
-1. Clone repository ```git clone https://github.com/BrianShiroe/portfolio-react-typescript-tailwind.git```
-2. Navigate to the project directory ```cd portfolio-react-typescript-tailwind```
-3. Install dependencies: ```npm install```
-4. Install tailwind and its dependencies ```npm install -D tailwindcss@3 postcss autoprefixer```
-5. Initialize tailwind CSS config ```npx tailwindcss init -p```
-6. Run the project ```npm start```
+1. Clone repository
+```
+git clone https://github.com/BrianShiroe/portfolio-react-typescript-tailwind.git
+```
+3. Navigate to the project directory
+```
+cd portfolio-react-typescript-tailwind
+```
+5. Install dependencies:
+```
+npm install
+```
+7. Install tailwind and its dependencies
+```
+npm install -D tailwindcss@3 postcss autoprefixer
+```
+10. Initialize tailwind CSS config
+```
+npx tailwindcss init -p
+```
+12. Run the project
+```
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
