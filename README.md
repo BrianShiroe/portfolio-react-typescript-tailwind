@@ -9,7 +9,7 @@
 
 ## Description
 
-Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [Brian Haw](https://github.com/BrianShiroe). Thank you!
+Feel free to fork this repo and customize it as your own portfolio. Please give credit by linking back to [github.com/BrianShiroe](https://github.com/BrianShiroe). Thank you!
 
 ## Built With
 
