@@ -42,27 +42,27 @@ To get a local copy up and running follow these simple steps.
 ## 🛠 Installation and Setup Instructions
 
 1. Clone repository
-```
+```bash
 git clone https://github.com/BrianShiroe/portfolio-react-typescript-tailwind.git
 ```
-3. Navigate to the project directory
-```
+2. Navigate to the project directory
+```bash
 cd portfolio-react-typescript-tailwind
 ```
-5. Install dependencies:
-```
+3. Install dependencies:
+```bash
 npm install
 ```
-7. Install tailwind and its dependencies
-```
+4. Install tailwind and its dependencies
+```bash
 npm install -D tailwindcss@3 postcss autoprefixer
 ```
-10. Initialize tailwind CSS config
-```
+5. Initialize tailwind CSS config
+```bash
 npx tailwindcss init -p
 ```
-12. Run the project
-```
+6. Run the project
+```bash
 npm start
 ```
 
