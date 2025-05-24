@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 - Node.js. Link: https://nodejs.org/en
-- Git https://git-scm.com/downloads
+- Git. https://git-scm.com/downloads
 
 ## 🛠 Installation and Setup Instructions
 
