@@ -1,6 +1,6 @@
 // src/pages/ProjectsAcademic.tsx
 // Displays categorized academic projects.
-// Each project includes a title, icon, description, image, and link.
+// Each project includes a title, icon, description, image, link, and hashtags.
 
 import React from "react";
 import type { ReactNode } from "react";
@@ -22,6 +22,7 @@ interface Project {
   disabled: boolean;
   btnStyle?: React.CSSProperties;
   extraLink?: ExtraLink;
+  hashtags?: string[];
 }
 
 const projectsAcademic: Project[] = [
@@ -37,6 +38,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
+    hashtags: ["#machinelearning", "#python", "#iot", "#opencv", "#yolo"],
   },
   {
     id: "pp2",
@@ -49,6 +51,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
   },
   {
     id: "pp9",
@@ -61,6 +64,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
   },
   {
     id: "pp8",
@@ -72,6 +76,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
   },
 ];
 
@@ -85,6 +90,7 @@ const ProjectCard: React.FC<Project> = ({
   disabled,
   btnStyle,
   extraLink,
+  hashtags,
 }) => (
   <div className="project animated bounce-in border rounded shadow p-4 mb-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
     <img src={imgSrc} alt={title} className="w-full md:w-48 object-cover rounded" />
@@ -94,32 +100,48 @@ const ProjectCard: React.FC<Project> = ({
         <span>{title}</span>
       </h2>
       <p className="mb-4 text-justify">{description}</p>
-      <div>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`btn inline-block px-4 py-2 rounded font-semibold transition-colors duration-300 ${
-            disabled
-              ? "bg-red-600 text-white cursor-not-allowed"
-              : "bg-indigo-600 hover:bg-indigo-700 text-white dark:bg-indigo-400 dark:hover:bg-indigo-500"
-          }`}
-          style={btnStyle}
-          aria-disabled={disabled}
-          tabIndex={disabled ? -1 : undefined}
-          onClick={disabled ? (e) => e.preventDefault() : undefined}
-        >
-          {linkText}
-        </a>
-        {extraLink && (
+
+      <div className="flex flex-wrap items-center justify-between">
+        <div>
           <a
-            href={extraLink.href}
+            href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn inline-block px-4 py-2 rounded text-white font-semibold ml-3 bg-blue-600 hover:bg-blue-700"
+            className={`btn inline-block px-4 py-2 rounded font-semibold transition-colors duration-300 ${
+              disabled
+                ? "bg-red-600 text-white cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700 text-white dark:bg-indigo-400 dark:hover:bg-indigo-500"
+            }`}
+            style={btnStyle}
+            aria-disabled={disabled}
+            tabIndex={disabled ? -1 : undefined}
+            onClick={disabled ? (e) => e.preventDefault() : undefined}
           >
-            {extraLink.text}
+            <span>{linkText}</span>
           </a>
+          {extraLink && (
+            <a
+              href={extraLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn inline-block px-4 py-2 rounded text-white font-semibold ml-3 bg-blue-600 hover:bg-blue-700"
+            >
+              {extraLink.text}
+            </a>
+          )}
+        </div>
+
+        {hashtags && hashtags.length > 0 && (
+          <div className="flex flex-wrap space-x-2 mt-2 md:mt-0">
+            {hashtags.map((tag) => (
+              <span
+                key={tag}
+                className="inline-block px-2 py-1 text-base font-mono text-indigo-700 bg-indigo-100 rounded"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         )}
       </div>
     </div>
