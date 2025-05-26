@@ -29,8 +29,8 @@ const skills = {
   "Development Tools and Platforms": [
     "VS/VSCode (Intermediate)",
     "LLM (Intermediate)",
-    "Git (Intermediate)",
     "GitHub (Intermediate)",
+    "Git (Beginner)",
     "Jira/Trello (Beginner)",
     "MySql Workbench (beginner)",
     "Docker (Beginner)",
