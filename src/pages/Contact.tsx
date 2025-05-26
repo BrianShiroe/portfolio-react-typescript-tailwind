@@ -6,7 +6,6 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaGithub,
-  FaMapMarkerAlt,
   FaBirthdayCake,
   FaUser,
   FaGlobe,
@@ -108,13 +107,6 @@ const Contact = () => (
               <FaBirthdayCake />
               <strong>Birth Date:</strong>
               <span>January 17, 2002</span>
-            </span>
-          </li>
-          <li>
-            <span className="inline-flex items-center space-x-2">
-              <FaMapMarkerAlt />
-              <strong>Street:</strong>
-              <span>Bonifacio Street</span>
             </span>
           </li>
           <li>
