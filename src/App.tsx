@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import { getInitialTheme, applyTheme, toggleThemeValue } from "./utils/theme";
 import type { Theme } from "./utils/theme";
 import LoadingScreen from "./components/LoadingScreen";
+import SocialSidebar from "./components/SocialSidebar";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -93,6 +94,7 @@ const App = () => {
         </section>
       </main>
       <Footer theme={theme} />
+      <SocialSidebar />
     </div>
   );
 };
