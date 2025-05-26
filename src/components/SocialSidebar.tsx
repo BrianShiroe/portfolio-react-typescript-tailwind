@@ -4,59 +4,44 @@ import { SiItchdotio } from "react-icons/si";
 
 const SocialSidebar = () => {
   return (
-    <div className="fixed bottom-0 right-6 flex flex-col items-center z-50 text-gray-600 dark:text-gray-300">
+    <div className="hidden md:flex fixed bottom-0 right-6 flex-col items-center z-50 text-gray-600 dark:text-gray-300">
       {/* Top Line */}
-      <div className="w-px h-10 bg-gray-400 dark:bg-gray-500" />
+      <div className="w-px h-10 bg-gray-400 dark:bg-gray-500 mb-2" />
 
-      {/* Icons embedded in the line */}
+      {/* Icons */}
       <ul className="flex flex-col items-center space-y-4">
         <li>
-          <a
-            href="https://linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          >
-            <div className="bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-blue-500 dark:hover:bg-blue-500 transition-colors duration-300">
-              <FaLinkedin className="text-lg group-hover:text-white" />
+          <a href="https://www.linkedin.com/in/brianshiroe" target="_blank" rel="noopener noreferrer" className="group">
+            <div className="p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 group-hover:bg-blue-500">
+              <FaLinkedin className="text-lg text-gray-600 dark:text-gray-300 group-hover:text-white" />
             </div>
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          >
-            <div className="bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-black dark:hover:bg-white transition-colors duration-300">
-              <FaGithub className="text-lg group-hover:text-white dark:group-hover:text-black" />
+          <a href="https://github.com/brianshiroe" target="_blank" rel="noopener noreferrer" className="group">
+            <div className="p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 group-hover:bg-black dark:group-hover:bg-gray-100">
+              <FaGithub className="text-lg text-gray-600 dark:text-gray-300 group-hover:text-white dark:group-hover:text-black" />
             </div>
           </a>
         </li>
         <li>
-          <a
-            href="https://your-itch-profile.itch.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          >
-            <div className="bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-red-500 transition-colors duration-300">
-              <SiItchdotio className="text-lg group-hover:text-white" />
+          <a href="https://mun-development.itch.io" target="_blank" rel="noopener noreferrer" className="group">
+            <div className="p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 group-hover:bg-red-500">
+              <SiItchdotio className="text-lg text-gray-600 dark:text-gray-300 group-hover:text-white" />
             </div>
           </a>
         </li>
         <li>
-          <a href="mailto:you@example.com" className="group">
-            <div className="bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-yellow-500 transition-colors duration-300">
-              <FaEnvelope className="text-lg group-hover:text-white" />
+          <a href="mailto:brianshiroe@gmail.com" className="group">
+            <div className="p-2 rounded-full transition-colors duration-300 bg-gray-100 dark:bg-gray-700 group-hover:bg-yellow-500">
+              <FaEnvelope className="text-lg text-gray-600 dark:text-gray-300 group-hover:text-white dark:group-hover:text-black" />
             </div>
           </a>
         </li>
       </ul>
 
       {/* Bottom Line */}
-      <div className="w-px h-10 bg-gray-400 dark:bg-gray-500 mt-4" />
+      <div className="w-px h-10 bg-gray-400 dark:bg-gray-500 mt-2" />
     </div>
   );
 };
