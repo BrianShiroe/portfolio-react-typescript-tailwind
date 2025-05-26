@@ -17,8 +17,8 @@ const skills = {
     "CSS3 (Intermediate)",
     "Bootstrap (Intermediate)",
     "Flask (Intermediate)",
-    "React.js (Beginner)",
     "Next.js (Beginner)",
+    "React.js (Beginner)",
     "Tailwind CSS (Beginner)",
   ],
   "Databases": [
@@ -29,8 +29,10 @@ const skills = {
   "Development Tools and Platforms": [
     "VS/VSCode (Intermediate)",
     "LLM (Intermediate)",
-    "Git/GitHub (Intermediate)",
+    "Git (Intermediate)",
+    "GitHub (Intermediate)",
     "Jira/Trello (Beginner)",
+    "MySql Workbench (beginner)",
     "Docker (Beginner)",
   ],
   "Machine Learning": [
@@ -38,6 +40,11 @@ const skills = {
     "OpenCV (Intermediate)",
     "TensorFlow (Beginner)",
     "PyTorch (Beginner)",
+  ],
+
+  "Deployment and Hosting Platform": [
+    "Netlify (Beginner)",
+    "Railway (Beginner)",
   ],
 };
 
