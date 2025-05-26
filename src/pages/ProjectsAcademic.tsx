@@ -44,7 +44,8 @@ const projectsAcademic: Project[] = [
     id: "pp2",
     title: "Web-Based IT Inventory Monitoring System",
     icon: <FaGlobe />,
-    description: `A web-based inventory monitoring system designed for the IT department of DPWH, enabling users to efficiently store, track, 
+    description: `A web-based inventory monitoring system designed for the IT
+     department of DPWH, enabling users to efficiently store, track, 
       and manage all computer hardware assets required by the organization.`,
     imgSrc: "/images/project-images/project10.png",
     link: "",
@@ -70,7 +71,8 @@ const projectsAcademic: Project[] = [
     id: "pp8",
     title: "Manaheartz Handicrafts Store Product Management System",
     icon: <FaDesktop />,
-    description: `A Computer Based Management System used to store all the products of the Manaheartz Handicrafts Store.`,
+    description: `A Computer Based Management System used to store all
+     the products of the Manaheartz Handicrafts Store.`,
     imgSrc: "/images/project-images/project8.1.png",
     link: "/assets/manaheartz-project.pdf",
     linkText: "PRIVATE PROJECT!",
@@ -92,7 +94,10 @@ const ProjectCard: React.FC<Project> = ({
   extraLink,
   hashtags,
 }) => (
-  <div className="project animated bounce-in border rounded shadow p-4 mb-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+  <div
+    className="project animated bounce-in border rounded
+   shadow p-4 mb-6 flex flex-col gap-4 md:flex-row md:gap-6"
+  >
     <img src={imgSrc} alt={title} className="w-full md:w-48 object-cover rounded" />
     <div className="content flex flex-col justify-between">
       <h2 className="text-2xl font-semibold flex items-center space-x-2 mb-2">
@@ -132,11 +137,13 @@ const ProjectCard: React.FC<Project> = ({
         </div>
 
         {hashtags && hashtags.length > 0 && (
-          <div className="flex flex-wrap space-x-2 mt-2 md:mt-0">
+          <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
             {hashtags.map((tag) => (
               <span
                 key={tag}
-                className="inline-block px-2 py-1 text-base font-mono text-indigo-700 bg-indigo-100 rounded"
+                className="inline-block px-2 py-1 text-base font-mono rounded
+                   text-indigo-700 bg-indigo-100
+                   dark:text-yellow-300 dark:bg-gray-800"
               >
                 {tag}
               </span>
