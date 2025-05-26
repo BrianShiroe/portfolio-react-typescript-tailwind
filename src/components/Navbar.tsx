@@ -73,8 +73,8 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
         isScrolled || mobileMenuOpen ? "bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100">Hi! I'm Brian. ^_^</h1>
+      <div className="max-w-6xl mx-auto flex items-center justify-between">
+        <h1 className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">BH.</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4">
