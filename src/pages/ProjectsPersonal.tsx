@@ -2,7 +2,7 @@
 // Displays categorized personal projects.
 // Each project includes a title, icon, description, image, link, and hashtags.
 
-import React from "react";
+import React, { useState } from "react";
 import type { ReactNode } from "react";
 import { FaRobot, FaGamepad } from "react-icons/fa";
 
@@ -163,7 +163,7 @@ const ProjectCard: React.FC<Project> = ({
             </a>
           )}
         </div>
-        
+
         {hashtags && hashtags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
             {hashtags.map((tag) => (
@@ -183,15 +183,35 @@ const ProjectCard: React.FC<Project> = ({
   </div>
 );
 
-const ProjectsPersonal: React.FC = () => (
-  <div className="p-6 max-w-6xl mx-auto">
-    <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">PERSONAL PROJECTS</h1>
-    <div className="projects-container personal">
-      {projectsPersonal.map((project) => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
+const ProjectsPersonal: React.FC = () => {
+  const [visibleCount, setVisibleCount] = useState(3); // <-- DEFAULT TO 3 VISIBLE PROJECTS
+
+  const handleToggle = () => {
+    setVisibleCount((prev) => (prev === projectsPersonal.length ? 3 : projectsPersonal.length));
+  };
+
+  return (
+    <div className="p-6 max-w-6xl mx-auto">
+      <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">PERSONAL PROJECTS</h1>
+      <div className="projects-container personal">
+        {projectsPersonal.slice(0, visibleCount).map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </div>
+      {projectsPersonal.length > 3 && (
+        <div className="text-center mt-4">
+          <button
+            onClick={handleToggle}
+            className="px-6 py-2 rounded
+            bg-gray-200 text-black hover:bg-gray-300
+            dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+          >
+            {visibleCount === projectsPersonal.length ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 export default ProjectsPersonal;

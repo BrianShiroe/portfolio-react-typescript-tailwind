@@ -2,7 +2,7 @@
 // Displays categorized academic projects.
 // Each project includes a title, icon, description, image, link, and hashtags.
 
-import React from "react";
+import React, { useState } from "react";
 import type { ReactNode } from "react";
 import { FaRobot, FaGlobe, FaDesktop } from "react-icons/fa";
 
@@ -155,15 +155,35 @@ const ProjectCard: React.FC<Project> = ({
   </div>
 );
 
-const ProjectsAcademic: React.FC = () => (
-  <div className="p-6 max-w-6xl mx-auto">
-    <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">ACADEMIC PROJECTS</h1>
-    <div className="projects-container academic">
-      {projectsAcademic.map((project) => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
+const ProjectsAcademic: React.FC = () => {
+  const [visibleCount, setVisibleCount] = useState(3); // <-- DEFAULT TO 3 VISIBLE PROJECTS
+
+  const handleToggle = () => {
+    setVisibleCount((prev) => (prev === projectsAcademic.length ? 3 : projectsAcademic.length));
+  };
+
+  return (
+    <div className="p-6 max-w-6xl mx-auto">
+      <h1 className="animated bounce-in text-4xl font-bold mb-6 text-center">ACADEMIC PROJECTS</h1>
+      <div className="projects-container academic">
+        {projectsAcademic.slice(0, visibleCount).map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </div>
+      {projectsAcademic.length > 2 && (
+        <div className="text-center mt-4">
+          <button
+            onClick={handleToggle}
+            className="px-6 py-2 rounded
+            bg-gray-200 text-black hover:bg-gray-300
+            dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+          >
+            {visibleCount === projectsAcademic.length ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 export default ProjectsAcademic;
