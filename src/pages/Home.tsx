@@ -23,7 +23,7 @@ const Home = () => {
 
       {/* Profile Picture */}
       <div
-        className="w-56 h-56 sm:w-54 sm:h-54 rounded-3xl overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
+        className="w-56 h-56 sm:w-54 sm:h-54 rounded-full overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
         aria-label="Profile picture of Brian O. Haw"
       >
         <img

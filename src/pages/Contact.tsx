@@ -25,20 +25,6 @@ const Contact = () => (
         <ul className="space-y-4 text-gray-800 dark:text-gray-200">
           <li>
             <span className="inline-flex items-center space-x-2">
-              <FaFacebook />
-              <strong>Facebook:</strong>
-              <a
-                href="https://facebook.com/brianshiroe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                facebook.com/brianshiroe
-              </a>
-            </span>
-          </li>
-          <li>
-            <span className="inline-flex items-center space-x-2">
               <FaLinkedin />
               <strong>LinkedIn:</strong>
               <a
@@ -48,15 +34,6 @@ const Contact = () => (
                 className="hover:underline"
               >
                 linkedin.com/in/brianshiroe
-              </a>
-            </span>
-          </li>
-          <li>
-            <span className="inline-flex items-center space-x-2">
-              <FaEnvelope />
-              <strong>Email:</strong>
-              <a href="mailto:brianshiroe@gmail.com" className="hover:underline">
-                brianshiroe@gmail.com
               </a>
             </span>
           </li>
@@ -88,9 +65,31 @@ const Contact = () => (
               </a>
             </span>
           </li>
+          <li>
+            <span className="inline-flex items-center space-x-2">
+              <FaEnvelope />
+              <strong>Email:</strong>
+              <a href="mailto:brianshiroe@gmail.com" className="hover:underline">
+                brianshiroe@gmail.com
+              </a>
+            </span>
+          </li>
+          <li>
+            <span className="inline-flex items-center space-x-2">
+              <FaFacebook />
+              <strong>Facebook:</strong>
+              <a
+                href="https://facebook.com/brianshiroe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                facebook.com/brianshiroe
+              </a>
+            </span>
+          </li>
         </ul>
       </div>
-
       {/* Right column - Personal Information */}
       <div className="flex-1">
         <h3 className="text-2xl font-semibold mb-4">Information</h3>
