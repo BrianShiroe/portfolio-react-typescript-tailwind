@@ -52,7 +52,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
-    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "#php", "#apache", "#phpmyadmin"],
   },
   {
     id: "pp9",
@@ -65,7 +65,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
-    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "#php", "#apache", "#phpmyadmin"],
   },
   {
     id: "pp8",
@@ -78,7 +78,7 @@ const projectsAcademic: Project[] = [
     linkText: "PRIVATE PROJECT!",
     disabled: true,
     btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
-    hashtags: ["#webdevelopment", "#xampp", "#mysql", "php", "apache", "phpmyadmin"],
+    hashtags: ["#webdevelopment", "#xampp", "#mysql", "#php", "#apache", "#phpmyadmin"],
   },
 ];
 
