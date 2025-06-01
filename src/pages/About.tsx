@@ -33,19 +33,15 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        I’m a <span className="text-indigo-600 dark:text-indigo-400 font-semibold">former lead developer</span> who
-        architected{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">computer vision AI systems</span> featuring
-        emergent heuristics that perform{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">meta-cognitive audits</span> of their own
-        operational ontology — enabling anomaly detection and{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">recursive disruptions</span> in
-        self-referential state coherence. As the{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Principal Disruption Strategist</span> at
-        the Institute of Unsolicited Innovation™, I pioneered{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">scalable spaghetti architectures</span>{" "}
-        atop cutting-edge frameworks, optimizing entropy as a feature, not a bug. I successfully transitioned systems
-        from functional to strictly local, always aspiring to be among the{" "}
+        Cum Laude <span className="text-indigo-600 dark:text-indigo-400 font-semibold">BSCS graduate</span> with a
+        multi-awarded thesis.{" "}
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Former lead developer</span> at Calbi,
+        architected <span className="text-indigo-600 dark:text-indigo-400 font-semibold">computer vision AI</span> with
+        emergent heuristics that audit their own operational ontology, enabling anomaly detection and recursive
+        disruptions in self-referential coherence. A pixel 2D engineer in{" "}
+        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Mun Development</span>, who pioneered
+        scalable spaghetti architectures on bleeding-edge frameworks, treating entropy as a feature, not a bug.
+        Transitioned systems from functional to strictly local and continue my quest to become one of the{" "}
         <span className="text-indigo-600 dark:text-indigo-400 font-semibold">greatest developers that ever lived</span>.
       </p>
 
