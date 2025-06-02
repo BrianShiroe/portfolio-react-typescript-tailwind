@@ -1,16 +1,23 @@
 // src/pages/About.tsx
-// Displays personal background, education details, and academic achievements .
+// Displays personal background, education details, and academic achievements.
 
 import { AcademicCapIcon, TrophyIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
+
+// Reusable Highlight (HL) component for consistent styling
+const HL = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{children}</span>
+);
 
 const About = () => {
   const achievements = [
     "Cum Laude Graduate",
-    "Academic Scholar",
-    "Dean's Lister",
-    "Placed in the Top 20 at the 2024 AppCon Competition",
-    "PAIR Research Conference Best Oral Research Presenter",
-    "PAIR Research Conference Best Abstract",
+    "Academic Scholar and Dean's Lister",
+    "Best Thesis Project Award",
+    "PAIR International Research Conference Best Abstract and Best Oral Research Presenter",
+    "Placed in the Top 20 finalist at the 2024 National AppCon Competition",
+    "Academic Leadership Award",
+    "Academic Achievers Award",
+    "Academic Research Award",
   ];
 
   const awardsAndCertificates = [
@@ -25,8 +32,8 @@ const About = () => {
   const educationDetails = [
     "Degree: Bachelor of Science in Computer Science",
     "Institution: Columban College, Inc., Philippines",
-    "Years Attended: 2021 - 2025",
-    "Expected Graduation: June 18, 2025",
+    "Attended: July 12, 2021",
+    "Graduated: June 18, 2025",
   ];
 
   return (
@@ -34,16 +41,13 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        Cum Laude <span className="text-indigo-600 dark:text-indigo-400 font-semibold">BSCS graduate</span> with a
-        multi-awarded thesis.{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Former lead developer</span> at Calbi,
-        architected <span className="text-indigo-600 dark:text-indigo-400 font-semibold">computer vision AI</span> with
-        emergent heuristics that audit their own operational ontology, enabling anomaly detection and recursive
-        disruptions in self-referential coherence. A pixel 2D engineer in{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Mun Development</span>, who pioneered
-        scalable spaghetti architectures on bleeding-edge frameworks, treating entropy as a feature, not a bug.
-        Transitioned systems from functional to strictly local and continue my quest to become one of the{" "}
-        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">greatest developers that ever lived</span>.
+        <HL>Cum Laude BSCS graduate</HL>, active in <HL>leadership</HL> with a <HL>multi-awarded thesis</HL> and{" "}
+        <HL>strong academic record</HL>. Former <HL>lead developer</HL> at Calbi, where I architected a{" "}
+        <HL>computer vision AI</HL> with emergent heuristics that audit its operational ontology, enabling anomaly
+        detection and recursive disruptions in self-referential coherence. <HL>Competed in various competitions</HL>,
+        pioneering scalable spaghetti architectures on bleeding-edge frameworks—treating entropy as a feature, not a
+        bug. Transitioned systems from functional to strictly local, continuing my quest to become one of the greatest
+        developers who ever lived.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}
