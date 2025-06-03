@@ -126,6 +126,13 @@ const Contact = () => {
             </li>
             <li>
               <span className="inline-flex items-center space-x-2">
+                <FaUser />
+                <strong>Handle:</strong>
+                <span>Brianshiroe</span>
+              </span>
+            </li>
+            <li>
+              <span className="inline-flex items-center space-x-2">
                 <FaBirthdayCake />
                 <strong>Age:</strong>
                 <span>{age} Years Old</span>
