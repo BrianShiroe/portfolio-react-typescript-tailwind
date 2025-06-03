@@ -24,7 +24,7 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="Brian O. Haw, Full Stack Developer, Python Developer, Machine Learning, Portfolio, React Developer"
+          content="Brian O. Haw, Software Developer, Full Stack Developer, Python Developer, Machine Learning, Portfolio, React Developer"
         />
         <meta name="author" content="Brian O. Haw" />
         <meta name="robots" content="index, follow" />
@@ -33,10 +33,7 @@ const Home = () => {
           property="og:description"
           content="Explore the work and projects of Brian O. Haw, a full stack and ML developer."
         />
-        <meta
-          property="og:image"
-          content="/images/home-images/profile-picture.png"
-        />
+        <meta property="og:image" content="/images/home-images/profile-picture.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com" />
         <link rel="canonical" href="https://yourdomain.com" />
@@ -44,13 +41,24 @@ const Home = () => {
 
       <main className="p-6 md:p-12 flex flex-col items-center justify-center min-h-screen max-w-5xl mx-auto text-center">
         {/* Header Section */}
-        <header
-          aria-label="Welcome section"
-          className="flex flex-col items-center space-y-3 px-4"
-        >
+        <header aria-label="Welcome section" className="flex flex-col items-center space-y-3 px-4">
           <h2 className="mt-6 mb-6 text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
             <span>Welcome to My Portfolio</span>
           </h2>
+
+          {/* Profile Picture - MOVED HERE */}
+          <div
+            className="w-56 h-56 sm:w-54 sm:h-54 rounded-full overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
+            aria-label="Profile picture of Brian O. Haw"
+          >
+            <img
+              src="/images/home-images/profile-picture.png"
+              alt="Brian O. Haw smiling"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
           {/* Name Section */}
           <h1 className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide">
@@ -78,25 +86,19 @@ const Home = () => {
           {/* Description Section */}
           <section
             aria-label="Professional description"
-            className="mt-10 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
+            className="mt-10 px-4 max-w-2xl text-lg sm:text-xl font-medium text-center"
           >
-            <span>· Full Stack · Machine Learning · Python Developer ·</span>
+            <div className="inline-flex items-center justify-center space-x-2">
+              <span>· Software · Full Stack · Machine Learning · Python ·</span>
+            </div>
+
+            <hr className="my-2 border-t border-black dark:border-white w-36 sm:w-60 mx-auto" />
+
+            <div className="inline-flex items-center justify-center mt-1">
+              <span>Developer</span>
+            </div>
           </section>
         </header>
-
-        {/* Profile Picture */}
-        <div
-          className="w-56 h-56 sm:w-54 sm:h-54 rounded-full overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
-          aria-label="Profile picture of Brian O. Haw"
-        >
-          <img
-            src="/images/home-images/profile-picture.png"
-            alt="Brian O. Haw smiling"
-            className="w-full h-full object-cover"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
       </main>
     </>
   );
