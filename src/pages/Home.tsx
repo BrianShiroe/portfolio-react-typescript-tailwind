@@ -3,6 +3,7 @@
 // Includes animated name banner and short professional description.
 
 import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const scrollToAbout = () => {
@@ -13,59 +14,91 @@ const Home = () => {
   };
 
   return (
-    <main className="p-6 md:p-12 flex flex-col items-center justify-center min-h-screen max-w-5xl mx-auto text-center">
-      {/* Header Section */}
-      <header aria-label="Welcome section" className="space-y-3 px-4">
-        <h2 className="mt-6 mb-6 text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
-          <span>Welcome to My Portfolio</span>
-        </h2>
-      </header>
-
-      {/* Profile Picture */}
-      <div
-        className="w-56 h-56 sm:w-54 sm:h-54 rounded-full overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
-        aria-label="Profile picture of Brian O. Haw"
-      >
-        <img
-          src="/images/home-images/profile-picture.png"
-          alt="Brian O. Haw smiling"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          decoding="async"
+    <>
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>Brian O. Haw | Full Stack & ML Developer</title>
+        <meta
+          name="description"
+          content="Welcome to the official portfolio of Brian O. Haw – Full Stack Developer, Machine Learning enthusiast, and Python expert."
         />
-      </div>
+        <meta
+          name="keywords"
+          content="Brian O. Haw, Full Stack Developer, Python Developer, Machine Learning, Portfolio, React Developer"
+        />
+        <meta name="author" content="Brian O. Haw" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Brian O. Haw Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore the work and projects of Brian O. Haw, a full stack and ML developer."
+        />
+        <meta
+          property="og:image"
+          content="/images/home-images/profile-picture.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <link rel="canonical" href="https://yourdomain.com" />
+      </Helmet>
 
-      {/* Name Section */}
-      <h1 className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide">
-        <button
-          onClick={scrollToAbout}
-          aria-label="Scroll to About section"
-          className="focus:outline-none"
-          type="button"
+      <main className="p-6 md:p-12 flex flex-col items-center justify-center min-h-screen max-w-5xl mx-auto text-center">
+        {/* Header Section */}
+        <header
+          aria-label="Welcome section"
+          className="flex flex-col items-center space-y-3 px-4"
         >
-          <ChevronDoubleDownIcon className="w-10 h-10 sm:w-11 sm:h-11 animate-bounce" />
-        </button>
+          <h2 className="mt-6 mb-6 text-3xl sm:text-4xl font-semibold inline-flex items-center justify-center space-x-3">
+            <span>Welcome to My Portfolio</span>
+          </h2>
 
-        <span>BRIANSHIROE</span>
+          {/* Name Section */}
+          <h1 className="text-4xl sm:text-5xl font-bold inline-flex items-center justify-center space-x-3 text-green-700 dark:text-green-400 tracking-wide">
+            <button
+              onClick={scrollToAbout}
+              aria-label="Scroll to About section"
+              className="focus:outline-none"
+              type="button"
+            >
+              <ChevronDoubleDownIcon className="w-10 h-10 sm:w-11 sm:h-11 animate-bounce" />
+            </button>
 
-        <button
-          onClick={scrollToAbout}
-          aria-label="Scroll to About section"
-          className="focus:outline-none"
-          type="button"
+            <span>BRIANSHIROE</span>
+
+            <button
+              onClick={scrollToAbout}
+              aria-label="Scroll to About section"
+              className="focus:outline-none"
+              type="button"
+            >
+              <ChevronDoubleDownIcon className="w-10 h-10 sm:w-11 sm:h-11 animate-bounce" />
+            </button>
+          </h1>
+
+          {/* Description Section */}
+          <section
+            aria-label="Professional description"
+            className="mt-10 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
+          >
+            <span>· Full Stack · Machine Learning · Python Developer ·</span>
+          </section>
+        </header>
+
+        {/* Profile Picture */}
+        <div
+          className="w-56 h-56 sm:w-54 sm:h-54 rounded-full overflow-hidden shadow-2xl my-6 transition-transform duration-300 ease-in-out hover:scale-105"
+          aria-label="Profile picture of Brian O. Haw"
         >
-          <ChevronDoubleDownIcon className="w-10 h-10 sm:w-11 sm:h-11 animate-bounce" />
-        </button>
-      </h1>
-
-      {/* Description Section */}
-      <section
-        aria-label="Professional description"
-        className="mt-10 px-4 max-w-2xl text-lg sm:text-xl font-medium inline-flex items-center justify-center text-center space-x-2"
-      >
-        <span>· Full Stack · Machine Learning · Python Developer ·</span>
-      </section>
-    </main>
+          <img
+            src="/images/home-images/profile-picture.png"
+            alt="Brian O. Haw smiling"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </main>
+    </>
   );
 };
 
