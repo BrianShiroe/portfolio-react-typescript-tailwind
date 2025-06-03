@@ -46,7 +46,7 @@ const Home = () => {
           <ChevronDoubleDownIcon className="w-10 h-10 sm:w-11 sm:h-11 animate-bounce" />
         </button>
 
-        <span>BRIAN HAW</span>
+        <span>BRIANSHIROE</span>
 
         <button
           onClick={scrollToAbout}

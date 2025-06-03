@@ -75,7 +75,7 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">
-          BH.
+          BS.
         </a>
 
         {/* Desktop Menu */}
