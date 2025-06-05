@@ -169,9 +169,12 @@ const ProjectCard: React.FC<Project> = ({
             {hashtags.map((tag) => (
               <span
                 key={tag}
-                className="inline-block px-2 py-1 text-base font-mono rounded
-                   text-indigo-700 bg-indigo-100
-                   dark:text-yellow-300 dark:bg-gray-800"
+                className="inline-block px-2 py-1 text-base font-mono rounded transition-all duration-200 transform
+                          text-indigo-700 bg-indigo-100
+                          dark:text-yellow-300 dark:bg-gray-800
+                          hover:bg-blue-200
+                          hover:text-blue-800 dark:hover:text-yellow-200
+                          hover:scale-105"
               >
                 {tag}
               </span>

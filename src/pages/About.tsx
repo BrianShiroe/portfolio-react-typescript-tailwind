@@ -41,13 +41,9 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        <HL>Cum Laude BSCS graduate</HL>, active in <HL>leadership</HL> with a <HL>multi-awarded thesis</HL> and{" "}
-        <HL>strong academic record</HL>. Former <HL>lead developer</HL> at Calbi, where I architected a{" "}
-        <HL>computer vision AI</HL> with emergent heuristics that audit its operational ontology, enabling anomaly
-        detection and recursive disruptions in self-referential coherence. <HL>Competed in various competitions</HL>,
-        pioneering scalable spaghetti architectures on bleeding-edge frameworks—treating entropy as a feature, not a
-        bug. Transitioned systems from functional to strictly local, continuing my quest to become one of the greatest
-        developers who ever lived.
+        A <HL>Cum Laude Computer Science graduate</HL> specializing in <HL>full-stack software development</HL>. I enjoy{" "}
+        <HL>building software</HL> and understanding how every part of the system works. Recognized with{" "}
+        <HL>multiple awards</HL> for <HL>leadership</HL> and <HL>academic excellence</HL>.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}
