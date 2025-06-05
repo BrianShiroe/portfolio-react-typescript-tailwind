@@ -20,7 +20,7 @@ const About = () => {
     "Academic Research Award",
   ];
 
-  const awardsAndCertificates = [
+  const Certificates = [
     "CNA: JavaScript Essentials 1",
     "CLP: Advanced Programming in C",
     "CLA: Programming Essentials in C",
@@ -84,14 +84,14 @@ const About = () => {
           </ul>
         </section>
 
-        {/* Awards & Certificates */}
+        {/*Certificates */}
         <section>
           <h3 className="text-3xl font-semibold mb-6 flex items-center space-x-3 text-yellow-600 dark:text-yellow-400">
             <CheckBadgeIcon className="w-8 h-8" />
-            <span>Awards & Certificates</span>
+            <span>Certificates</span>
           </h3>
           <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
-            {awardsAndCertificates.map((award) => (
+            {Certificates.map((award) => (
               <li key={award} className="flex items-center space-x-2">
                 <CheckBadgeIcon className="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0" />
                 <span>{award}</span>
