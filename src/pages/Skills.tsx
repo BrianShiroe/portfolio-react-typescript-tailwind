@@ -2,18 +2,16 @@
 // Skills section displaying categorized technical proficiencies.
 
 const skills = {
-  "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C", "Java"],
-  "Web Development": ["HTML5 / CSS3", "Bootstrap", "Tailwind CSS", "Flask", "React.js / Next.js"],
+  "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C"],
+  "Web Development": ["HTML5 / CSS3", "Bootstrap", "Tailwind CSS", "Flask", "React.js", "Next.js"],
   Databases: ["MySQL", "SQLite", "Firebase"],
   "Development Tools & Platforms": [
-    "VS / VSCode",
+    "VSCode",
     "LLMs",
-    "Git / GitHub",
+    "Git",
     "Jira / Trello",
-    "MySQL Workbench",
-    "Docker",
   ],
-  "Machine Learning & Computer Vision": ["YOLO", "OpenCV", "TensorFlow", "PyTorch"],
+  "Machine Learning & Computer Vision": ["YOLO", "OpenCV"],
   "Deployment & Hosting": ["Netlify", "Railway"],
 };
 
