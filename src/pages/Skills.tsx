@@ -3,7 +3,7 @@
 
 const skills = {
   "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C"],
-  "Web Development": ["HTML5", "SS3", "Bootstrap", "Tailwind CSS", "Flask", "React.js", "Next.js"],
+  "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind CSS", "Flask", "React.js", "Next.js"],
   Databases: ["MySQL", "SQLite", "Firebase"],
   "Development Tools & Platforms": [
     "VSCode",
