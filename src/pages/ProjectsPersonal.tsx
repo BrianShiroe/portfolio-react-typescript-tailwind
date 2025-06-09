@@ -108,6 +108,19 @@ const projectsPersonal: Project[] = [
     btnStyle: {},
     hashtags: ["#unity", "#indiegame", "#2dgame", "#gamedev"],
   },
+  {
+    id: "pp12",
+    title: "Climb It Up!",
+    icon: <FaGamepad />,
+    description: `Combining roblox, minecraft, and parkour, I present Climb it Up!, 
+    a roblox game where you climb minecraft style obstacles with the goal of reaching the top.`,
+    imgSrc: "/images/project-images/project12.png",
+    link: "https://www.roblox.com/games/105682805148258/Climb-It-Up",
+    linkText: "Click Here To View on Roblox!",
+    disabled: false,
+    btnStyle: {},
+    hashtags: ["#roblox", "#indiegame", "#3dgame", "#gamedev"],
+  },
 ];
 
 const ProjectCard: React.FC<Project> = ({
