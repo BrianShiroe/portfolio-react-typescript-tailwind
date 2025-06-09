@@ -41,9 +41,9 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        A <HL>Cum Laude Computer Science graduate</HL> specializing in <HL>full-stack software development</HL>. I enjoy{" "}
-        <HL>building software</HL> and understanding how every part of the system works. Recognized with{" "}
-        <HL>multiple awards</HL> for <HL>leadership</HL> and <HL>academic excellence</HL>.
+        I'm a <HL>Computer Science graduate</HL> specializing in <HL>full-stack software development</HL>. I enjoy
+        building applications and am particularly <HL>focused on creating scalable applications</HL> as I continue to
+        hone my skills.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}
