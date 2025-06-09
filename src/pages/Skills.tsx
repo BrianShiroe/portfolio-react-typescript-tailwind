@@ -4,15 +4,10 @@
 const skills = {
   "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C"],
   "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind", "Flask", "React.js", "Next.js"],
-  Databases: ["MySQL", "SQLite", "Firebase"],
-  "Development Tools & Platforms": [
-    "VSCode",
-    "LLMs",
-    "Git",
-    "Jira / Trello",
-  ],
-  "Machine Learning & Computer Vision": ["YOLO", "OpenCV"],
-  "Deployment & Hosting": ["Netlify", "Railway"],
+  "Deployment Platforms": ["Netlify", "Railway"],
+  "Databases": ["MySQL", "SQLite", "Firebase"],
+  "Development Tools & Platforms": ["VSCode", "LLMs", "Git", "Jira / Trello", "YOLO", "OpenCV"],
+  "Game Development": ["Unity", "Unreal Engine", "Roblox Studio", "Godot"],
 };
 
 const Skills = () => (
