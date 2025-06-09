@@ -6,7 +6,7 @@ const skills = {
   "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind", "Flask", "React.js", "Next.js"],
   "Deployment Platforms": ["Netlify", "Railway"],
   "Databases": ["MySQL", "SQLite", "Firebase"],
-  "Development Tools & Platforms": ["VSCode", "LLMs", "Git", "Jira / Trello", "YOLO", "OpenCV"],
+  "Development and Machine Learning Tools": ["VSCode", "LLMs", "Git", "Jira / Trello", "YOLO", "OpenCV"],
   "Game Development": ["Unity", "Unreal Engine", "Roblox Studio", "Godot"],
 };
 
