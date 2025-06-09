@@ -12,12 +12,12 @@ const About = () => {
   const achievements = [
     "Cum Laude Graduate",
     "Academic Scholar and Dean's Lister",
+    "Leadership Award",
+    "Achievers Award",
+    "Research Excellence Award",
     "Best Thesis Project Award",
-    "PAIR International Research Conference Best Abstract and Best Oral Research Presenter",
-    "Placed in the Top 20 finalist at the 2024 National AppCon Competition",
-    "Academic Leadership Award",
-    "Academic Achievers Award",
-    "Academic Research Award",
+    "Best Abstract and Best Oral Research Presenter - PAIR International Research Conference",
+    "Top 20 Finalist - 2024 National AppCon Competition",
   ];
 
   const Certificates = [
