@@ -4,9 +4,9 @@
 const skills = {
   "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C"],
   "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind", "Flask", "React.js", "Next.js"],
-  "Deployment Platforms": ["Netlify", "Railway"],
+  "Hosting Platforms": ["Netlify", "Railway", "Github"],
   "Databases": ["MySQL", "SQLite", "Firebase"],
-  "Development and Machine Learning Tools": ["VSCode", "LLMs", "Git", "Jira / Trello", "YOLO", "OpenCV"],
+  "Development and Machine Learning Tools": ["VSCode", "LLMs", "Git", "Jira", "Trello", "YOLO", "OpenCV"],
   "Game Development": ["Unity", "Unreal Engine", "Roblox Studio", "Godot"],
 };
 
