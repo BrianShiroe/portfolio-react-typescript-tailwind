@@ -34,10 +34,9 @@ const projectsAcademic: Project[] = [
       live CCTV streaming, incident playback and recording, intelligent analytics, and IoT camera integration. 
       The detection model was trained on 18k image data, with 100 epochs, 640 image size, 16 batch size, and 8 workers.`,
     imgSrc: "/images/project-images/project7.jpg",
-    link: "https://github.com/LCbalsa/calbi-luka.git",
-    linkText: "PRIVATE PROJECT!",
-    disabled: true,
-    btnStyle: { backgroundColor: "red", color: "white", cursor: "not-allowed" },
+    link: "https://www.youtube.com/watch?v=Yjx-tC63V7k",
+    linkText: "Youtube Demo",
+    disabled: false,
     hashtags: ["#machinelearning", "#python", "#iot", "#opencv", "#yolo"],
   },
   {
