@@ -2,7 +2,7 @@
 // Skills section displaying categorized technical proficiencies.
 
 const skills = {
-  "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#", "C"],
+  "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#"],
   "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind", "Flask", "React.js", "Next.js"],
   "Hosting Platforms": ["Netlify", "Railway", "Github"],
   "Databases": ["MySQL", "SQLite", "Firebase"],
