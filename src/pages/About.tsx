@@ -1,17 +1,24 @@
 // src/pages/About.tsx
 // Displays personal background, education details, and academic achievements.
 
-import { AcademicCapIcon, TrophyIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
+import {
+  AcademicCapIcon,
+  TrophyIcon,
+  CheckBadgeIcon,
+} from "@heroicons/react/24/outline";
 
 // Reusable Highlight (HL) component for consistent styling
 const HL = ({ children }: { children: React.ReactNode }) => (
-  <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{children}</span>
+  <span className="text-indigo-600 dark:text-indigo-400 font-semibold">
+    {children}
+  </span>
 );
 
 const About = () => {
   const achievements = [
     "Cum Laude Graduate",
-    "Academic Scholar and Dean's Lister",
+    "Academic Scholar",
+    "Dean's Lister",
     "Leadership Award",
     "Achievers Award",
     "Research Excellence Award",
@@ -21,6 +28,7 @@ const About = () => {
   ];
 
   const Certificates = [
+    "CLP: JavaScript Advance Programming",
     "CNA: JavaScript Essentials 1",
     "CLP: Advanced Programming in C",
     "CLA: Programming Essentials in C",
@@ -41,9 +49,12 @@ const About = () => {
       <h2 className="text-4xl font-semibold mb-8 text-center">About Me</h2>
 
       <p className="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-justify">
-        I'm a <HL>Computer Science graduate</HL> specializing in <HL>full-stack software development</HL>. I enjoy
-        building applications and am particularly <HL>focused on creating scalable applications</HL> as I continue to
-        hone my skills.
+        I'm a <HL>Computer Science graduate</HL> with a passion for exploring
+        the field — from <HL>full-stack development</HL> to problem-solving,
+        data structures, and emerging technologies. I enjoy building functional
+        applications and understanding how systems work to solve real-world
+        challenges. I'm <HL>committed</HL> to continuous learning and applying my skills
+        to create innovative and practical solutions.
       </p>
 
       {/* 3-column layout for Education, Achievements, Awards */}

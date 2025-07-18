@@ -2,12 +2,43 @@
 // Skills section displaying categorized technical proficiencies.
 
 const skills = {
-  "Programming Languages": ["JavaScript", "TypeScript", "Python", "PHP", "GDScript", "C#"],
-  "Web Development": ["HTML", "CSS", "Bootstrap", "Tailwind", "Flask", "React.js", "Next.js"],
+  "Programming Languages": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "PHP",
+    "GDScript",
+    "C#",
+  ],
+  "Web Development": [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Tailwind",
+    "Flask",
+    "React.js",
+    "Next.js",
+  ],
   "Hosting Platforms": ["Netlify", "Railway", "Github"],
-  "Databases": ["MySQL", "SQLite", "Firebase"],
-  "Development and Machine Learning Tools": ["VSCode", "LLMs", "Git", "Jira", "Trello", "YOLO", "OpenCV"],
+  Databases: ["MySQL", "SQLite", "Firebase"],
+  "Development and Machine Learning Tools": [
+    "VSCode",
+    "LLMs",
+    "Git",
+    "Jira",
+    "Trello",
+    "YOLO",
+    "OpenCV",
+  ],
   "Game Development": ["Unity", "Unreal Engine", "Roblox Studio", "Godot"],
+  Others: [
+    "RESTful APIs",
+    "OOP",
+    "Kanban",
+    "System Testing",
+    "Debugging",
+    "Responsive Design",
+  ],
 };
 
 const Skills = () => (
@@ -19,7 +50,9 @@ const Skills = () => (
           key={category}
           className="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg hover:scale-[1.01]"
         >
-          <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">{category}</h2>
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+            {category}
+          </h2>
           <div className="flex flex-wrap gap-2">
             {items.map((skill) => (
               <span

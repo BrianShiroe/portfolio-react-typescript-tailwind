@@ -52,7 +52,7 @@ const Home = () => {
             aria-label="Profile picture of Brian O. Haw"
           >
             <img
-              src="/images/home-images/profile-picture.png"
+              src="/images/home-images/profile-square.png"
               alt="Brian O. Haw smiling"
               className="w-full h-full object-cover"
               loading="lazy"
