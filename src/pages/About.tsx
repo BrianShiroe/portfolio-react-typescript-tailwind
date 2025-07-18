@@ -28,7 +28,7 @@ const About = () => {
   ];
 
   const Certificates = [
-    "CLP: JavaScript Advance Programming",
+    "CLP: JavaScript Essentials 2",
     "CNA: JavaScript Essentials 1",
     "CLP: Advanced Programming in C",
     "CLA: Programming Essentials in C",
