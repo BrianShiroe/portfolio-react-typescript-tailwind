@@ -19,8 +19,8 @@ const skills = {
     "React.js",
     "Next.js",
   ],
-  "Hosting Platforms": ["Netlify", "Railway", "Github"],
-  Databases: ["MySQL", "SQLite", "Firebase"],
+  Services: ["Netlify", "Railway", "AWS"],
+  Databases: ["MySQL", "SQLite", "Firebase", "MongoDB"],
   "Development and Machine Learning Tools": [
     "VSCode",
     "LLMs",
@@ -31,6 +31,25 @@ const skills = {
     "OpenCV",
   ],
   "Game Development": ["Unity", "Unreal Engine", "Roblox Studio", "Godot"],
+  React: [
+    "Component-based Architecture",
+    "Virtual DOM",
+    "props",
+    "hooks",
+    "useState",
+    "useEffect",
+    "useContext",
+    "useMemo",
+  ],
+  "Version Control": [
+    "git",
+    "github",
+    "add",
+    
+    "push",
+    "pull",
+    "commit",
+  ],
   Others: [
     "RESTful APIs",
     "OOP",
