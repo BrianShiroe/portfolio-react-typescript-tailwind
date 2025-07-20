@@ -45,10 +45,16 @@ const skills = {
     "git",
     "github",
     "add",
-    
+    "commit",
     "push",
     "pull",
-    "commit",
+    "main",
+    "reset --soft",
+    "reset --hard",
+    "checkout",
+    "checkout -b",
+    "stash",
+    "stash pop",
   ],
   Others: [
     "RESTful APIs",
@@ -56,7 +62,11 @@ const skills = {
     "Kanban",
     "System Testing",
     "Debugging",
+    "password hashing",
+    "encryption",
+    "syncronous / asyncronous",
     "Responsive Design",
+    "SQL injection Prevension",
   ],
 };
 
