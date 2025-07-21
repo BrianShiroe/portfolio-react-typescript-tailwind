@@ -149,14 +149,14 @@ const Contact = () => {
               <span className="inline-flex items-center space-x-2">
                 <FaCity />
                 <strong>City:</strong>
-                <span>Olongapo City</span>
+                <span>Dubai</span>
               </span>
             </li>
             <li>
               <span className="inline-flex items-center space-x-2">
                 <FaFlag />
                 <strong>Country:</strong>
-                <span>Philippines</span>
+                <span>United Arab Emirates</span>
               </span>
             </li>
           </ul>
